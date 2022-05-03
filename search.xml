@@ -250,6 +250,17 @@
 <p><img src="/OI-Sequel/IMG_3764.JPG" alt="IMG_3764"></p>
 <p><img src="/OI-Sequel/IMG_3765.JPG" alt="IMG_3765"></p>
 <h1 id="day-1-2"><a class="markdownIt-Anchor" href="#day-1-2"></a> day 1</h1>
+<p>早上七点半起床，八点到校，八点半开考。</p>
+<p>开考的时候看了下 T2，感觉很可做，一下就看出来是最大子段和，这样就可以做到 40 分了。</p>
+<p>然后毫无进展，随便搞了一搞，发现可以根号分治，捏了几组可能要 T，自闭。<img src="/OI-Sequel/MJCXC1J%7DF8$PM4BBBN1QD.gif" alt="img"></p>
+<p>开 T1 之后搞了一会，发现算重了，然后我可能没有睡醒，还写了个 prufer 序列结论啥的。 <img src="/OI-Sequel/MJCXC1J%7DF8$PM4BBBN1QD.gif" alt="img"></p>
+<p>这不直接退役了，然后苟了一波 20 分，我的 20 分可能有点奇怪，状压之后还需要高维容斥。</p>
+<p>反正只有 20 分，没什么好说的。</p>
+<p>摆烂选手了属于是。</p>
+<p>T3 开了之后就写了 task1，然后开始摆。</p>
+<p>分数大概是: 20 + [40, 100] + 10 = [70, 130]，有点绷不住。</p>
+<p><strong>奋斗一上午，分数六七十。</strong></p>
+<p>我的评价是: 题出的很好，明年没机会体验了。</p>
 <h1 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> day 2</h1>
 ]]></content>
   </entry>
