@@ -262,7 +262,33 @@
 <p><strong>奋斗一上午，分数六七十。</strong></p>
 <p>我的评价是: 题出的很好，明年没机会体验了。</p>
 <h1 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> day 2</h1>
-]]></content>
+<p>还是七点半起床，八点到校，八点半开考。</p>
+<p>开考的时候简单先看了看题，三个题都不太可做，混部分分就行了。</p>
+<p>第一题看着还蛮可做，题目里已经在明示什么了，随便写了个暴力，发现几次之后形态就不变了。</p>
+<p>这里的形态指的是: 差分序列非 0 的个数不变。</p>
+<p>就这样，发现 98304 = 32768 * 3，那么很好，只有 2 种的数字。</p>
+<p>然后 500 以内的数字种类也不太多，直接 64-预处理 矩阵快速幂就行了。</p>
+<p>98304 转移挺方便但是容易卡常，就写了个 4*65536 的矩阵光速幂，这样就苟到了 45 分。</p>
+<p>然后看了看第二题，先写了个状压，发现大样例强度好像不太够。。大概率 g，不 g 的话是 40 分。</p>
+<p>第三题一看肯定写不出来，就直接弃了。</p>
+<p>下午补了补作业，回班上课了。</p>
+<h1 id="day"><a class="markdownIt-Anchor" href="#day"></a> day ?</h1>
+<p>出分了，</p>
+<p>day1: 20 + 45 + 10 = 75</p>
+<p>day2: 45 + 0 + 0 = 45</p>
+<p>有人问我 d1t2 的 45 怎么来的，我能说是我小块写挂了吗，大块处理过了大样例  <img src="/OI-Sequel/E9BIPM$_%609%7D%60VS07%60VD9H1F.gif" alt="img"></p>
+<p>没办法了。</p>
+<p>有点遗憾，不过 <strong>裸考</strong> 吊打同校高一的小朋友（高二就我参赛了。</p>
+<p>说要给我办 AFO 仪式？我高三还会裸考 NOIp 玩儿呢。</p>
+<h1 id="day-2"><a class="markdownIt-Anchor" href="#day-2"></a> day ???</h1>
+<p>晚上睡不着的时候会想，如果我今年停一年课，会不会有进队的可能呢？毕竟圆方树是我会写的东西，根号分治和状压的话没退役也不会写挂吧，可能 d2t3 的期望我会写不来。</p>
+<p>那这样我也会有 130 + 85，如果 noip 再考高一点比如说考到 300+，就铁进队了啊。</p>
+<p>但是人生就是充满遗憾的，这是无法避免的，我无法预知之后会发生什么事情。</p>
+<p>可能，确实会遗憾吧，这是我后悔的一件事之一。</p>
+<p>但是这个后悔，在 noip 之后就已经必然决定了，我没有 froggy 的决心，也没有买 C 的可能。（只有强校可以买 C）</p>
+<hr>
+<p>接下来的路，一定要用力猛冲，rush!!!</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">    <span class="built_in">doit</span>();</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>tags</title>
