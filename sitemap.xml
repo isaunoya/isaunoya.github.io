@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://isaunoya.github.io/ZJ-math2022/</loc>
+    
+    <lastmod>2022-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://isaunoya.github.io/2022-%E9%AB%98%E8%80%83%E6%95%B0%E5%AD%A6/</loc>
     
     <lastmod>2022-06-09</lastmod>
