@@ -59,6 +59,14 @@
 <p>$\rightarrow 4kb+4k+4b-4+8k^2&#x3D;0$</p>
 <p>$\rightarrow 2k^2 + k + kb + b - 1 &#x3D; 0$ </p>
 <p>$\rightarrow (k+1)(2k + b - 1) &#x3D; 0$</p>
+<p>$\rightarrow k &#x3D; -1$</p>
+<hr>
+<p>$l:y&#x3D;-x+b\ [k &#x3D; -1]$</p>
+<p>$\rightarrow \tan (\alpha - \beta) &#x3D; 2\sqrt 2$</p>
+<p>$\rightarrow \frac{k1-k2}{1+k1k2} &#x3D; 2\sqrt 2$</p>
+<p>因为 $k1 + k2 &#x3D; 0$</p>
+<p>解出来 $k1&#x3D;\sqrt 2,k2 &#x3D; -\sqrt 2$ 或者 $k1 &#x3D; \frac{\sqrt{2}}{2}, k2 &#x3D; -\frac{\sqrt 2}{2}$</p>
+<p>然后就是 DIRTY WORK, 最后答案 $\frac{16\sqrt 2}{9}$</p>
 <p><a href="https://zhuanlan.zhihu.com/p/525466524">https://zhuanlan.zhihu.com/p/525466524</a></p>
 ]]></content>
   </entry>
