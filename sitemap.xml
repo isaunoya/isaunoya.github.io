@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://isaunoya.github.io/2022-7-%E5%AD%A6%E8%80%83/</loc>
+    
+    <lastmod>2022-07-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://isaunoya.github.io/announcement/</loc>
     
     <lastmod>2022-06-17</lastmod>
@@ -40,7 +49,7 @@
 
   <url>
     <loc>http://isaunoya.github.io/</loc>
-    <lastmod>2022-06-17</lastmod>
+    <lastmod>2022-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
