@@ -32,11 +32,4 @@
 <p>猜一个 CAA, 等短信了。</p>
 ]]></content>
   </entry>
-  <entry>
-    <title>math-test</title>
-    <url>/math-test/</url>
-    <content><![CDATA[<p>$\texttt{here is a test.}$</p>
-<p>$e^x = \sum_{n=0}^{\infin} \frac{x^n}{n!}$</p>
-]]></content>
-  </entry>
 </search>
