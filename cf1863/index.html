@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>cf1863 | ~</title><meta name="author" content="Isaunoya"><meta name="copyright" content="Isaunoya"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="A.直接写就完了。 12345678910111213141516171819void solve() &amp;#123;  int n, a, q;  cin &gt;&gt; n &gt;&gt; a &gt;&gt; q;  int b&#x3D;a,mx&#x3D;a;  rp(i,q)&amp;#123;    char c;    cin&gt;&gt;c;    if(c&#x3D;&#x3D;&amp;#x27;-&amp;#x27;)a--;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cf1863">
+<meta property="og:url" content="http://isaunoya.github.io/cf1863/index.html">
+<meta property="og:site_name" content="~">
+<meta property="og:description" content="A.直接写就完了。 12345678910111213141516171819void solve() &amp;#123;  int n, a, q;  cin &gt;&gt; n &gt;&gt; a &gt;&gt; q;  int b&#x3D;a,mx&#x3D;a;  rp(i,q)&amp;#123;    char c;    cin&gt;&gt;c;    if(c&#x3D;&#x3D;&amp;#x27;-&amp;#x27;)a--;">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://isaunoya.github.io/img/favicon.png">
+<meta property="article:published_time" content="2023-09-04T09:35:47.000Z">
+<meta property="article:modified_time" content="2023-09-04T09:36:36.315Z">
+<meta property="article:author" content="Isaunoya">
+<meta property="article:tag" content="CF">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://isaunoya.github.io/img/favicon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://isaunoya.github.io/cf1863/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'cf1863',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2023-09-04 17:36:36'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/favicon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/top_img.png')"><nav id="nav"><span id="blog-info"><a href="/" title="~"><span class="site-name">~</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">cf1863</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-09-04T09:35:47.000Z" title="Created 2023-09-04 17:35:47">2023-09-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-09-04T09:36:36.315Z" title="Updated 2023-09-04 17:36:36">2023-09-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="cf1863"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="A"><a href="#A" class="headerlink" title="A."></a>A.</h2><p>直接写就完了。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n, a, q;</span><br><span class="line">  cin &gt;&gt; n &gt;&gt; a &gt;&gt; q;</span><br><span class="line">  <span class="type">int</span> b=a,mx=a;</span><br><span class="line">  <span class="built_in">rp</span>(i,q)&#123;</span><br><span class="line">    <span class="type">char</span> c;</span><br><span class="line">    cin&gt;&gt;c;</span><br><span class="line">    <span class="keyword">if</span>(c==<span class="string">&#x27;-&#x27;</span>)a--;</span><br><span class="line">    <span class="keyword">if</span>(c==<span class="string">&#x27;+&#x27;</span>)a++,b++;</span><br><span class="line">    <span class="built_in">cmax</span>(mx,a);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span>(mx==n)&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;YES\n&quot;</span>;</span><br><span class="line">  &#125;<span class="keyword">else</span> <span class="keyword">if</span>(b&gt;=n)&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;MAYBE\n&quot;</span>;</span><br><span class="line">  &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;NO\n&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="B"><a href="#B" class="headerlink" title="B."></a>B.</h2><p>考虑至多 $n-1$ 次，然后其实有些操作是不必要的，然后减掉这些不必要的就可以，但是这个实际上就是计算必要的部分。（下图写的是计算必要的。）</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="type">int</span> n;</span><br><span class="line">  cin&gt;&gt;n;</span><br><span class="line">  <span class="function">vi <span class="title">p</span><span class="params">(n)</span></span>;</span><br><span class="line">  <span class="built_in">rp</span>(i,n)&#123;</span><br><span class="line">    <span class="type">int</span> x;</span><br><span class="line">    cin&gt;&gt;x;</span><br><span class="line">    --x;</span><br><span class="line">    p[x]=i;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="type">int</span> w=<span class="number">0</span>;</span><br><span class="line">  <span class="built_in">rep</span>(i,<span class="number">1</span>,n)<span class="keyword">if</span>(p[i<span class="number">-1</span>]&gt;p[i])++w;</span><br><span class="line">  cout&lt;&lt;w&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="C"><a href="#C" class="headerlink" title="C."></a>C.</h2><p>考虑每次操作其实是向前平移一位。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n,k;</span><br><span class="line">  cin&gt;&gt;n&gt;&gt;k;</span><br><span class="line">  <span class="function">vi <span class="title">a</span><span class="params">(n)</span></span>;</span><br><span class="line">  <span class="built_in">rp</span>(i,n)cin&gt;&gt;a[i];</span><br><span class="line">  set&lt;<span class="type">int</span>&gt;s;</span><br><span class="line">  <span class="built_in">rp</span>(i,n+<span class="number">2</span>)s.<span class="built_in">insert</span>(i);</span><br><span class="line">  <span class="built_in">rp</span>(i,n)<span class="keyword">if</span>(s.<span class="built_in">count</span>(a[i]))s.<span class="built_in">erase</span>(a[i]);</span><br><span class="line">    <span class="built_in">rp</span>(j,n)&#123;</span><br><span class="line">      <span class="type">int</span> x=a[j];</span><br><span class="line">      a[j]=*s.<span class="built_in">begin</span>();</span><br><span class="line">      s.<span class="built_in">erase</span>(s.<span class="built_in">begin</span>());</span><br><span class="line">      s.<span class="built_in">insert</span>(x);</span><br><span class="line">    &#125;</span><br><span class="line">  a.<span class="built_in">pb</span>(*s.<span class="built_in">begin</span>());</span><br><span class="line">  <span class="comment">// debug(a);</span></span><br><span class="line">  <span class="built_in">rp</span>(i,n)&#123;</span><br><span class="line">    cout&lt;&lt;a[((i-k+<span class="number">1</span>)%(n+<span class="number">1</span>)+n+<span class="number">1</span>)%(n+<span class="number">1</span>)]&lt;&lt;<span class="string">&quot; \n&quot;</span>[i+<span class="number">1</span>==n];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="D"><a href="#D" class="headerlink" title="D."></a>D.</h2><p>考虑到横竖相互不影响。</p>
+<p>所以我们优先考虑竖着的，横着的同理。</p>
+<p>对于竖着的，我们存一下上面的那个 $(x, y)$，如果 $x$ 相同的没有偶数个，那么必定构造不出来，因为你可以考虑第一个只有奇数个的那一行，就已经构造失败了。</p>
+<p>然后考虑竖着的构造方式，比如说</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">UU</span><br><span class="line">DD</span><br><span class="line">UU</span><br><span class="line">DD</span><br></pre></td></tr></table></figure>
+
+<p>如果 $(x1)$ 这一行和 $(x2)$ 这一行采用相同策略，那么就会构造出一个错误的答案，但是我们可以考虑更换行的时候翻转，这样就没有问题了。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n,m;</span><br><span class="line">  cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">  vc&lt;pii&gt; a;</span><br><span class="line">  vc&lt;pii&gt; b;</span><br><span class="line">  <span class="built_in">rp</span>(i,n)<span class="built_in">rp</span>(j,m)&#123;</span><br><span class="line">    <span class="type">char</span> c;</span><br><span class="line">    cin&gt;&gt;c;</span><br><span class="line">    <span class="keyword">if</span>(c==<span class="string">&#x27;U&#x27;</span>)</span><br><span class="line">      a.<span class="built_in">pb</span>(i,j);</span><br><span class="line">    <span class="keyword">if</span>(c==<span class="string">&#x27;L&#x27;</span>)</span><br><span class="line">      b.<span class="built_in">pb</span>(i,j);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function">vc&lt;vi&gt; <span class="title">ans</span><span class="params">(n,vi(m,<span class="number">-1</span>))</span></span>;</span><br><span class="line">  <span class="type">int</span> c=<span class="number">0</span>;</span><br><span class="line">  <span class="type">int</span> p=<span class="number">-1</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">auto</span> [x,y]:a)&#123;</span><br><span class="line">    <span class="keyword">if</span>(x!=p)&#123;p=x,c^=<span class="number">1</span>;&#125;</span><br><span class="line">    ans[x][y]=c;</span><br><span class="line">    ans[x+<span class="number">1</span>][y]=c^<span class="number">1</span>;</span><br><span class="line">    c^=<span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  c=<span class="number">0</span>;</span><br><span class="line">  p=<span class="number">-1</span>;</span><br><span class="line">  <span class="built_in">sort</span>(<span class="built_in">all</span>(b),[&amp;](<span class="keyword">auto</span> A,<span class="keyword">auto</span> B)&#123;</span><br><span class="line">    <span class="keyword">return</span> A.second&lt;B.second;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">auto</span> [x,y]:b)&#123;</span><br><span class="line">    <span class="keyword">if</span>(y!=p)&#123;p=y,c^=<span class="number">1</span>;&#125;</span><br><span class="line">    ans[x][y]=c;</span><br><span class="line">    ans[x][y+<span class="number">1</span>]=c^<span class="number">1</span>;</span><br><span class="line">    c^=<span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function">vi <span class="title">row</span><span class="params">(n)</span>,<span class="title">col</span><span class="params">(m)</span></span>;</span><br><span class="line">  <span class="built_in">rp</span>(i,n)<span class="built_in">rp</span>(j,m)&#123;</span><br><span class="line">    <span class="keyword">if</span>(ans[i][j]==<span class="number">1</span>)&#123;</span><br><span class="line">      row[i]++;</span><br><span class="line">      col[j]++;</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(ans[i][j]==<span class="number">0</span>)&#123;</span><br><span class="line">      row[i]--;</span><br><span class="line">      col[j]--;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="type">bool</span> ok=<span class="literal">true</span>;</span><br><span class="line">  <span class="built_in">rp</span>(i,n)<span class="keyword">if</span>(row[i])ok=<span class="literal">false</span>;</span><br><span class="line">  <span class="built_in">rp</span>(i,m)<span class="keyword">if</span>(col[i])ok=<span class="literal">false</span>;</span><br><span class="line">  <span class="keyword">if</span>(!ok)cout&lt;&lt;<span class="string">&quot;-1\n&quot;</span>;</span><br><span class="line">  <span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="built_in">rp</span>(i,n)&#123;</span><br><span class="line">      <span class="built_in">rp</span>(j,m)&#123;</span><br><span class="line">        <span class="keyword">if</span>(ans[i][j]==<span class="number">1</span>)&#123;</span><br><span class="line">          cout&lt;&lt;<span class="string">&#x27;W&#x27;</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(ans[i][j]==<span class="number">0</span>)&#123;</span><br><span class="line">          cout&lt;&lt;<span class="string">&#x27;B&#x27;</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">          cout&lt;&lt;<span class="string">&#x27;.&#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      cout&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="E"><a href="#E" class="headerlink" title="E."></a>E.</h2><p>建立反图，那么把反图中没有入度的点塞进去，用拓扑排序跑最长路，然后每个点得到一个距离 $d_u$，然后知道如果从 $u$ 这个地方开始走，走到最后一定是 $[h_u, h_u+d_u]$ 才能完成，然后把这些区间都塞进去。</p>
+<p>容易知道每个的起点只可能是 $[h_u, h_u + k]$，然后就可以枚举左端点来做出这个题。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n,m,k;</span><br><span class="line">  cin&gt;&gt;n&gt;&gt;m&gt;&gt;k;</span><br><span class="line">  <span class="function">vc&lt;ll&gt; <span class="title">h</span><span class="params">(n)</span>,<span class="title">d</span><span class="params">(n,<span class="number">0</span>)</span></span>;</span><br><span class="line">  <span class="built_in">rp</span>(i,n)cin&gt;&gt;h[i];</span><br><span class="line">  vc&lt;vc&lt;pair&lt;ll,ll&gt;&gt;&gt;<span class="built_in">g</span>(n);</span><br><span class="line">  <span class="function">vi <span class="title">deg</span><span class="params">(n)</span>,<span class="title">out</span><span class="params">(n)</span></span>;</span><br><span class="line">  <span class="built_in">rp</span>(i,m)&#123;</span><br><span class="line">    <span class="type">int</span> x,y;</span><br><span class="line">    cin&gt;&gt;x&gt;&gt;y;</span><br><span class="line">    --x,--y;</span><br><span class="line">    ll cost=h[y]-h[x];</span><br><span class="line">    <span class="keyword">if</span>(cost&lt;<span class="number">0</span>)cost+=k;</span><br><span class="line">    g[y].<span class="built_in">pb</span>(x,cost);</span><br><span class="line">    out[y]++;</span><br><span class="line">    deg[x]++;</span><br><span class="line">  &#125;</span><br><span class="line">  queue&lt;<span class="type">int</span>&gt;q;</span><br><span class="line">  <span class="built_in">rp</span>(i,n)<span class="keyword">if</span>(deg[i]==<span class="number">0</span>)q.<span class="built_in">emplace</span>(i);</span><br><span class="line">  <span class="keyword">while</span>(<span class="built_in">sz</span>(q))&#123;</span><br><span class="line">    <span class="type">int</span> u=q.<span class="built_in">front</span>();q.<span class="built_in">pop</span>();</span><br><span class="line">    <span class="comment">// debug(u);</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">auto</span> [v,w]:g[u])&#123;</span><br><span class="line">      <span class="comment">// debug(v,w);</span></span><br><span class="line">      <span class="built_in">cmax</span>(d[v],d[u]+w);</span><br><span class="line">      <span class="keyword">if</span>(--deg[v]==<span class="number">0</span>)&#123;</span><br><span class="line">        q.<span class="built_in">emplace</span>(v);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// debug(d);</span></span><br><span class="line">  vc&lt;pair&lt;ll,ll&gt;&gt;t;</span><br><span class="line">  <span class="built_in">rp</span>(i,n)<span class="keyword">if</span>(out[i]==<span class="number">0</span>)t.<span class="built_in">pb</span>(h[i],h[i]+d[i]);</span><br><span class="line">  <span class="comment">// debug(t);</span></span><br><span class="line">  <span class="built_in">sort</span>(<span class="built_in">all</span>(t));</span><br><span class="line">  ll R=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">auto</span> [x,y]:t)<span class="built_in">cmax</span>(R,y);</span><br><span class="line">  ll ans=lnf;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">auto</span> [x,y]:t)&#123;</span><br><span class="line">    <span class="built_in">cmin</span>(ans,R-x);</span><br><span class="line">    <span class="built_in">cmax</span>(R,y+k);</span><br><span class="line">  &#125;</span><br><span class="line">  cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="F"><a href="#F" class="headerlink" title="F."></a>F.</h2><p>分情况讨论。</p>
+<p>令 $s &#x3D; a_l \oplus … \oplus a_r$。</p>
+<p>$x &#x3D; a_l\oplus…\oplus a_k$。</p>
+<p>$y&#x3D;a_{k+1}\oplus…a_r$。</p>
+<ul>
+<li>$s&#x3D;0$，我们可以选择任意的一个 $k$，因为随便怎么选都是 $x&#x3D;y$。</li>
+<li>$s \neq 0$，那么可以选择左边这样的 $k$，使得 $s$ 的最高位和 $x$ 的某一位相同。因为 $y$ 没有这个位，所以比 $x$ 要小。右侧对 $y$ 也同理。</li>
+</ul>
+<p>我们将长度不递增的办法来遍历所有子数组。记录 $l_L$ 为左端点为 $L$ 的所有异或和的最高位的并，然后检查 $s$ 和这个位置开始的有没有相交的部分，如果有的话，那么他肯定是可以更新的，如果他可以更新，那么可以考虑下一步的转移，也就是把可行的部分的 $s$ 的最高位，扔到 $l_L$ 和 $r_R$ 里。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> ll U = (<span class="number">1LL</span> &lt;&lt; <span class="number">61</span>) - <span class="number">1</span>;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="type">int</span> n;</span><br><span class="line">  cin &gt;&gt; n;</span><br><span class="line">  <span class="function">vc&lt;ll&gt; <span class="title">a</span><span class="params">(n)</span></span>;</span><br><span class="line">  <span class="built_in">rp</span>(i, n) cin &gt;&gt; a[i];</span><br><span class="line">  <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">    cout &lt;&lt; <span class="number">1</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function">vc&lt;ll&gt; <span class="title">b</span><span class="params">(n + <span class="number">1</span>)</span>, <span class="title">l</span><span class="params">(n)</span>, <span class="title">r</span><span class="params">(n)</span></span>;</span><br><span class="line">  b[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">  <span class="built_in">rp</span>(i, n) b[i + <span class="number">1</span>] = b[i] ^ a[i], l[i] = r[i] = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">if</span> (b[n] == <span class="number">0</span>)</span><br><span class="line">    l[<span class="number">0</span>] = r[n - <span class="number">1</span>] = U;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    l[<span class="number">0</span>] = r[n - <span class="number">1</span>] = <span class="number">1LL</span> &lt;&lt; __lg(b[n]);</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> len = n - <span class="number">1</span>; len &gt;= <span class="number">1</span>; len--) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> L = <span class="number">0</span>, R = len - <span class="number">1</span>; R &lt; n; L += <span class="number">1</span>, R += <span class="number">1</span>) &#123;</span><br><span class="line">      ll val = b[R + <span class="number">1</span>] ^ b[L];</span><br><span class="line">      <span class="type">bool</span> ok = <span class="literal">false</span>;</span><br><span class="line">      <span class="keyword">if</span> (l[L] &amp; val)</span><br><span class="line">        ok = <span class="literal">true</span>;</span><br><span class="line">      <span class="keyword">if</span> (l[L] == U)</span><br><span class="line">        ok = <span class="literal">true</span>;</span><br><span class="line">      <span class="keyword">if</span> (r[R] &amp; val)</span><br><span class="line">        ok = <span class="literal">true</span>;</span><br><span class="line">      <span class="keyword">if</span> (r[R] == U)</span><br><span class="line">        ok = <span class="literal">true</span>;</span><br><span class="line">      ll hb = __lg(val);</span><br><span class="line">      <span class="keyword">if</span> (ok) &#123;</span><br><span class="line">        <span class="keyword">if</span> (val == <span class="number">0</span>) &#123;</span><br><span class="line">          l[L] = r[R] = U;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          l[L] |= <span class="number">1LL</span> &lt;&lt; hb;</span><br><span class="line">          r[R] |= <span class="number">1LL</span> &lt;&lt; hb;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span> (len == <span class="number">1</span>) &#123;</span><br><span class="line">        cout &lt;&lt; (ok ? <span class="string">&#x27;1&#x27;</span> : <span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意对 $s&#x3D;0$ 的处理即可。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://isaunoya.github.io">Isaunoya</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://isaunoya.github.io/cf1863/">http://isaunoya.github.io/cf1863/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/CF/">CF</a></div><div class="post_share"><div class="social-share" data-image="/img/favicon.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/linear-algebra/" title="linear-algebra"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">linear-algebra</div></div></a></div><div class="next-post pull-right"><a href="/cf1861/" title="cf1861"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">cf1861</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/cf1810/" title="CF1810"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-08-29</div><div class="title">CF1810</div></div></a></div><div><a href="/cf1860/" title="CF1860"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-08-29</div><div class="title">CF1860</div></div></a></div><div><a href="/cf1862/" title="CF1862"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-08-29</div><div class="title">CF1862</div></div></a></div><div><a href="/cf1864/" title="CF1864"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-08-29</div><div class="title">CF1864</div></div></a></div><div><a href="/cf1861/" title="cf1861"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-04</div><div class="title">cf1861</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/favicon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Isaunoya</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/isaunoya"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#A"><span class="toc-number">1.</span> <span class="toc-text">A.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#B"><span class="toc-number">2.</span> <span class="toc-text">B.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C"><span class="toc-number">3.</span> <span class="toc-text">C.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#D"><span class="toc-number">4.</span> <span class="toc-text">D.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#E"><span class="toc-number">5.</span> <span class="toc-text">E.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#F"><span class="toc-number">6.</span> <span class="toc-text">F.</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/linear-algebra/" title="linear-algebra">linear-algebra</a><time datetime="2023-09-04T09:38:09.000Z" title="Created 2023-09-04 17:38:09">2023-09-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/cf1863/" title="cf1863">cf1863</a><time datetime="2023-09-04T09:35:47.000Z" title="Created 2023-09-04 17:35:47">2023-09-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/cf1861/" title="cf1861">cf1861</a><time datetime="2023-09-04T09:35:16.000Z" title="Created 2023-09-04 17:35:16">2023-09-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/the-2nd-universal-cup-stage-1-qingdao/" title="the-2nd-universal-cup-stage-1-qingdao">the-2nd-universal-cup-stage-1-qingdao</a><time datetime="2023-09-04T09:33:06.000Z" title="Created 2023-09-04 17:33:06">2023-09-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/cf1862/" title="CF1862">CF1862</a><time datetime="2023-08-29T10:05:50.301Z" title="Created 2023-08-29 18:05:50">2023-08-29</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Isaunoya</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, '']
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typesetPromise()
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
