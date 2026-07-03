@@ -1,0 +1,87 @@
+name: Deploy Pages
+
+on:
+  push:
+    branches:
+      - main
+  repository_dispatch:
+    types:
+      - typst-blog-updated
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HAS_TYPST_BLOG_READ_TOKEN: ${{ secrets.TYPST_BLOG_READ_TOKEN != '' }}
+
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v7
+        with:
+          path: site
+
+      - name: Checkout public theme package
+        if: env.HAS_TYPST_BLOG_READ_TOKEN != 'true'
+        uses: actions/checkout@v7
+        with:
+          repository: isaunoya/typst-blog
+          ref: main
+          path: typst-blog
+
+      - name: Checkout private theme package
+        if: env.HAS_TYPST_BLOG_READ_TOKEN == 'true'
+        uses: actions/checkout@v7
+        with:
+          repository: isaunoya/typst-blog
+          token: ${{ secrets.TYPST_BLOG_READ_TOKEN }}
+          ref: main
+          path: typst-blog
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v5
+        with:
+          typst-version: ^0.15.0
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v6
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: site
+
+      - name: Build static site
+        run: npm run build
+        working-directory: site
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

@@ -1,0 +1,18 @@
+{
+  "name": "isaunoya.github.io",
+  "private": true,
+  "description": "isaunoya's Typst-powered static blog.",
+  "type": "commonjs",
+  "scripts": {
+    "new": "typst-blog new",
+    "build": "typst-blog build",
+    "serve": "typst-blog serve",
+    "dev": "typst-blog dev"
+  },
+  "dependencies": {
+    "@isaunoya/typst-blog": "file:../typst-blog"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

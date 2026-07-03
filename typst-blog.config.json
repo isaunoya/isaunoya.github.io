@@ -1,0 +1,57 @@
+{
+  "site": {
+    "title": "isaunoya's blog",
+    "description": "Notes written in Typst.",
+    "baseUrl": "https://isaunoya.github.io",
+    "author": "isaunoya",
+    "language": "zh-CN"
+  },
+  "profile": {
+    "name": "isaunoya",
+    "title": "",
+    "bio": "Hi there! I'm isaunoya. Nice to meet you!",
+    "avatar": "https://github.com/isaunoya.png",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/isaunoya" },
+      { "label": "Codeforces", "url": "https://codeforces.com/profile/Retired_Isaunoya" },
+      { "label": "Libra", "url": "https://isaunoya.github.io/libra/" },
+      { "label": "Email", "url": "mailto:isaunoya@qq.com" }
+    ]
+  },
+  "notFound": {
+    "pageTitle": "Page not found",
+    "title": "404",
+    "message": "The requested page could not be found.",
+    "homeLabel": "Go home",
+    "postsLabel": "Read posts"
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 4321
+  },
+  "codeBlocks": {
+    "defaultOpen": false
+  },
+  "mathBlocks": {
+    "defaultOpen": false
+  },
+  "comments": {
+    "enabled": true,
+    "provider": "giscus",
+    "giscus": {
+      "repo": "isaunoya/isaunoya.github.io",
+      "repoId": "R_kgDOKMzGXw",
+      "category": "Announcements",
+      "categoryId": "DIC_kwDOKMzGX84DAbWg",
+      "mapping": "pathname",
+      "term": "",
+      "strict": "0",
+      "reactionsEnabled": "1",
+      "emitMetadata": "0",
+      "inputPosition": "bottom",
+      "theme": "preferred_color_scheme",
+      "lang": "en",
+      "loading": "lazy"
+    }
+  }
+}

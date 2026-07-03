@@ -1,0 +1,6 @@
+dist/
+_site-preview/
+.typst-blog-cache/
+data/*.json
+.DS_Store
+node_modules/
