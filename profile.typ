@@ -77,12 +77,6 @@
     fold: false,
   ),
   profile.row(
-    date: [May 2024],
-    left: [2024 CCPC Invitational Contest (Shandong) — Gold Medal, 1st Place],
-    link: "https://board.xcpcio.com/provincial-contest/2024/shandong",
-    fold: false,
-  ),
-  profile.row(
     date: [Apr. 2024],
     left: [21st Zhejiang Provincial Collegiate Programming Contest — Gold Medal, 1st Place],
     link: "https://board.xcpcio.com/provincial-contest/2024/zhejiang",
@@ -113,6 +107,11 @@
   ),
 )
 
+#let section-title(icon, label) = [
+  #html.elem("span", attrs: (class: "profile-section-icon"))[#icon]
+  #html.elem("span")[#label]
+]
+
 #let html-profile() = profile-intro(
   bio: profile-bio,
   avatar_url: "https://github.com/isaunoya.png",
@@ -123,11 +122,11 @@
   show_posts_action: false,
   details: [
     #profile.about(profile-about)
-    #profile.section(id: "experience", title: "Experience", rows: experience)
-    #profile.section(id: "awards", title: "Awards", rows: awards, size: "small")
+    #profile.section(id: "experience", title: section-title("💼", "Experience"), rows: experience)
+    #profile.section(id: "awards", title: section-title("🏆", "Awards"), rows: awards, size: "small")
     #profile.section(
       id: "problem-setting",
-      title: "Problem-setting Contributions",
+      title: section-title("🧩", "Problem-setting Contributions"),
       rows: contest-setting,
       size: "small",
     )
