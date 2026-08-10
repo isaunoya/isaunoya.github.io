@@ -1,9 +1,9 @@
 #import "/.typst-blog/typst/home.typ": profile-intro
 #import "/.typst-blog/typst/profile.typ" as profile
 
-#let profile-bio = "Hi there! I’m isaunoya."
+#let profile-bio = "isaunoya"
 
-#let profile-about = "I’m currently focused on competitive programming and AI inference. The sections below collect selected public experience, awards, and problem-setting contributions."
+#let profile-about = "Competitive programmer and AI inference engineer."
 
 #let profile-links = (
   (label: "GitHub", url: "https://github.com/isaunoya"),
