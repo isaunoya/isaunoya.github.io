@@ -3,7 +3,7 @@
 
 #let profile-bio = "isaunoya"
 
-#let profile-about = "Competitive programmer and AI inference engineer."
+#let profile-about = "Currently focused on competitive programming and AI inference."
 
 #let profile-links = (
   (label: "GitHub", url: "https://github.com/isaunoya"),
