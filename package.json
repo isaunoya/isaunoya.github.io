@@ -7,7 +7,9 @@
     "new": "typst-blog new",
     "build": "typst-blog build",
     "serve": "typst-blog serve",
-    "dev": "typst-blog dev"
+    "dev": "typst-blog dev",
+    "postinstall": "typst-blog setup --editor",
+    "pdf": "typst-blog pdf"
   },
   "dependencies": {
     "@isaunoya/typst-blog": "file:../typst-blog"

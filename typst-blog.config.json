@@ -10,7 +10,7 @@
     "name": "isaunoya",
     "title": "",
     "bio": "",
-    "avatar": "https://github.com/isaunoya.png",
+    "avatar": "assets/avatar.jpg",
     "links": [
       {
         "label": "GitHub",
@@ -57,9 +57,12 @@
       "reactionsEnabled": "1",
       "emitMetadata": "0",
       "inputPosition": "bottom",
-      "theme": "transparent_dark",
+      "theme": "light",
       "lang": "en",
       "loading": "lazy"
     }
+  },
+  "footer": {
+    "credit": "Made with ❤️ & GPT"
   }
 }

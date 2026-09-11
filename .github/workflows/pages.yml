@@ -61,8 +61,12 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v6
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install theme dependencies
+        run: npm ci
+        working-directory: typst-blog
+
+      - name: Install site dependencies
+        run: npm ci
         working-directory: site
 
       - name: Build static site

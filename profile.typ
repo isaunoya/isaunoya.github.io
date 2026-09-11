@@ -1,40 +1,39 @@
-#let profile-links = (
-  (label: "GitHub", url: "https://github.com/isaunoya"),
-  (label: "Codeforces", url: "https://codeforces.com/profile/Retired_Isaunoya"),
-  (label: "CP Library", url: "https://isaunoya.github.io/libra/"),
-)
+#import "/.typst-blog/typst/home.typ": profile-intro, profile-link-section
 
-#let contest-setting = (
+#let identity = json("typst-blog.config.json").profile
+
+#let contests = (
   (
-    left: [2024 China Collegiate Programming Contest (CCPC) Female Onsite],
-    link: "https://qoj.ac/contest/1841",
-    fold: false,
+    date: "2025",
+    title: "ICPC Asia East Continent Online Contest II",
+    url: "https://qoj.ac/contest/2524",
   ),
   (
-    left: [Sichuan Collegiate Programming Contest 2025],
-    link: "https://qoj.ac/contest/2152",
-    fold: false,
+    date: "2025",
+    title: "Guangxi Collegiate Programming Contest Invitation",
+    url: "https://ac.nowcoder.com/acm/contest/110811",
   ),
   (
-    left: [Guangxi Collegiate Programming Contest 2025 Invitation],
-    link: "https://ac.nowcoder.com/acm/contest/110811",
-    fold: false,
+    date: "2025",
+    title: "Sichuan Collegiate Programming Contest",
+    url: "https://qoj.ac/contest/2152",
   ),
   (
-    left: [The 2025 ICPC Asia East Continent Online Contest II],
-    link: "https://qoj.ac/contest/2524",
-    fold: false,
+    date: "2024",
+    title: "CCPC Female Onsite",
+    url: "https://qoj.ac/contest/1841",
   ),
 )
 
-= isaunoya
-
-#for item in profile-links [
-  - #link(item.url)[#text(item.label)]
-]
-
-== Problem Setting
-
-#for item in contest-setting [
-  - #link(item.link)[#item.left]
-]
+#profile-intro(
+  avatar_url: identity.avatar,
+  avatar_alt: identity.name,
+  avatar_initial: "I",
+  links: identity.links,
+  show_posts_action: false,
+  details: profile-link-section(
+    title: "Problem Setting",
+    id: "problem-setting",
+    items: contests,
+  ),
+)

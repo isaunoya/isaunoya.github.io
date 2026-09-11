@@ -4,3 +4,5 @@ _site-preview/
 data/*.json
 .DS_Store
 node_modules/
+.typst-blog/
+.vscode/settings.json
