@@ -64,5 +64,8 @@
   },
   "footer": {
     "credit": "Made with ❤️ & GPT"
+  },
+  "postPdf": {
+    "enabled": true
   }
 }

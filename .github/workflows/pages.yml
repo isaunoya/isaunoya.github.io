@@ -58,6 +58,24 @@ jobs:
         with:
           typst-version: ^0.15.0
 
+      - name: Install PDF fonts
+        run: sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
+
+      - name: Identify compiler and font environment
+        id: build-environment
+        shell: bash
+        run: |
+          build_environment_hash=$({ typst --version; dpkg-query -W fonts-noto-cjk; } | sha256sum | cut -d ' ' -f 1)
+          echo "hash=$build_environment_hash" >> "$GITHUB_OUTPUT"
+
+      - name: Restore compiled article cache
+        uses: actions/cache@v4
+        with:
+          path: site/.typst-blog-cache
+          key: ${{ runner.os }}-articles-v1-${{ steps.build-environment.outputs.hash }}-${{ hashFiles('typst-blog/src/**', 'typst-blog/typst/**') }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-articles-v1-${{ steps.build-environment.outputs.hash }}-${{ hashFiles('typst-blog/src/**', 'typst-blog/typst/**') }}-
+
       - name: Configure Pages
         uses: actions/configure-pages@v6
 

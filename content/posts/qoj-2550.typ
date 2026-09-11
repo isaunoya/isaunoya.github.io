@@ -2,407 +2,287 @@
 
 #show: blog.post.with(
   title: "IOI 2026 中国国家集训队作业泛做",
+  author: "isaunoya",
   slug: "qoj-2550",
   date: "2026-09-12",
-  tags: ("algorithm", "qoj", "ioi", "acm"),
-  excerpt: "QOJ Contest 2550 泛做记录：按原顺序整理 119 道题目的简要中文题意、数据范围，并预留折叠题解。",
+  tags: ("acm",),
+  excerpt: "QOJ Contest 2550 泛做记录",
   published: true,
 )
 
-题目来自 #link("https://qoj.ac/contest/2550")[IOI 2026 中国国家集训队作业（试题泛做）]。以下按比赛原顺序整理全部 119 题，保留原题链接；题意与数据范围为简要整理，完整定义和输入输出格式见原题。
+题目来自 #link("https://qoj.ac/contest/2550")[IOI 2026 中国国家集训队作业（试题泛做）]。
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/833")[1\. Cells Blocking]
 
 *题意* 给定部分格子已经阻塞的 $n times m$ 网格，再选择两个不同的空格阻塞，求使得从 $(1,1)$ 到 $(n,m)$ 不存在仅向右或向下经过空格的路径的方案数。允许选择起点或终点；初始时也可能已经无路可走。
 
 *数据范围* $1 <= n,m <= 3000$；网格字符为 `.` 和 `*`，分别表示空格与阻塞格。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/837")[2\. Giant Penguin]
 
 *题意* 给定连通简单无向图，每个顶点至多属于 $k$ 个简单环。初始没有标记，依次支持标记一个尚未标记的顶点，以及查询给定顶点到最近已标记顶点的最短距离。
 
 *数据范围* $1 <= n <= 10^5$，$n-1 <= m <= 2 times 10^5$，$0 <= k <= 10$，$1 <= q <= 2 times 10^5$；查询距离时保证已有标记点。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/850")[3\. Edit Distance Yet Again]
 
 *题意* 给定两个小写字母串 $s,t$ 和整数 $k$，判断其编辑距离是否不超过 $k$。允许插入、删除或替换一个字符，每次代价为 $1$。若满足条件，还需输出最少操作次数及任意一组最优操作序列。
 
 *数据范围* $1 <= z <= 100$，$1 <= n,m <= 10^6$，$0 <= k <= 1000$；所有测试用例中两个字符串的长度总和不超过 $10^7$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/856")[4\. Cactus]
 
 *题意* 给定一个连通简单无向图，且每个顶点至多属于一个简单环。用 $k$ 种颜色给顶点染色，要求每条边的两端颜色不同，求方案数模 $10^9+7$。
 
 *数据范围* $1 <= z <= 50000$，$1 <= n <= 3 times 10^5$，$0 <= m <= 4 times 10^5$，$2 <= k <= 10^9$；所有测试用例的 $n$ 之和不超过 $3 times 10^6$，$m$ 之和不超过 $4 times 10^6$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/857")[5\. Social Distancing]
 
 *题意* 树上有 $k$ 名学生，初始位置与目标计算机位置各构成一个独立集。一次只能让一名学生沿一条边移动，且每步后学生不能同点或相邻。判断能否使所有学生占据目标位置；若能，输出不超过 $4n^2$ 次的移动方案，学生与目标的对应关系可任选。
 
 *数据范围* $1 <= z <= 10^5$，$2 <= n <= 2000$，$1 <= k < n$；所有测试用例的 $n^2$ 之和不超过 $4 times 10^7$。保证初始与目标位置集合不同。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/862")[6\. Social Justice]
 
 *题意* 给定 $n$ 人的工资与 $K=p/q>1$。选择人数尽可能多的非空集合，使其中每人的工资都不超过该集合平均工资的 $K$ 倍。输出在所有最大人数的合法集合中都不可能被保留的人的数量及升序编号。
 
 *数据范围* $1 <= z <= 1000$，$1 <= n <= 2 times 10^5$，$0 <= a_i <= 10^9$，$1 <= q < p <= 1000$；所有测试用例的 $n$ 之和不超过 $10^6$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/887")[7\. Final Exam]
 
 *题意* 给 $n$ 门考试分配非负实数复习时间 $x_i$，总时间不超过 $M$。第 $i$ 门的得分为 $f_i(x_i)=max(0,min(d_i,a_i x_i^2+b_i x_i+c_i))$，求最大总分。时间不必全部用完。
 
 *数据范围* $1 <= n <= 10^5$，$0 < M <= 10^8$，$abs(a_i) <= 10$，$abs(b_i) <= 5000$，$0 <= c_i <= d_i <= 5000$；至多 $18$ 个 $a_i>0$。所有输入实数精确至小数点后三位；答案误差要求 $abs(v-v^*)/max(v^*,1) <= 10^(-6)$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/888")[8\. Travel around China]
 
 *题意* 给定 $3 times m$ 网格，每格有正点权，可以在上下左右相邻格之间移动。路径费用为所有经过格子的点权之和，包含两端，重复经过需重复计费。求所有起终点不同的有序格子对之间的最小路径费用之和，模 $10^9+7$。
 
 *数据范围* $n=3$，$1 <= m <= 150000$，$1 <= a_(i,j) <= 10^9$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/962")[9\. Thanks to MikeMirzayanov]
 
 *题意* 给定一个排列。一次操作把整个排列切成 $k>=2$ 个非空连续段，将这些段的顺序反转，每段内部的顺序不变。输出不超过 $120$ 次操作，使排列升序排列；每次输出分段数及各段长度。
 
 *数据范围* $1 <= n <= 20000$；输入是 $1$ 到 $n$ 的排列。保证存在满足操作次数上限的方案，无须最少操作。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/964")[10\. Excluded Min]
 
 *题意* 对非负整数多重集，可以选一个至少出现两次的数 $x$，把其中一次改成 $x+1$ 或非负的 $x-1$。给定数组与若干区间询问，分别求对该区间的多重集任意操作后能得到的最大 mex；mex 为未出现的最小非负整数。
 
 *数据范围* $1 <= n,q <= 5 times 10^5$，$0 <= a_i <= 5 times 10^5$，$1 <= l_i <= r_i <= n$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/970")[11\. Best Subsequence]
 
 *题意* 每次询问给定 $L,R,K$，从 $A_L,dots,A_R$ 中选取长度恰为 $K$ 的子序列 $C$，将其首尾也视为相邻。求所有环形相邻两数之和的最大值的最小可能值。
 
 *数据范围* $1 <= n,Q <= 10^5$，$0 <= A_i <= 10^9$，$1 <= L <= R <= n$，$1 <= K <= R-L+1$；当 $K=1$ 时该元素与自身相邻。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/971")[12\. Binary Search Tree]
 
 *题意* 初始有 $n$ 棵空的二叉搜索树。支持向编号在 $[l,r]$ 的每棵树中插入值 $w$，以及查询在第 $x$ 棵树中查找值 $a$ 的代价。插入采用普通 BST 规则，不进行平衡；查找从根出发，按大小关系走向左右孩子，找到目标或走到空孩子时结束，代价为访问的所有非空节点的值之和。
 
 *数据范围* $1<=n,m<=2 times 10^5$，$1<=w,a<=10^9$；所有插入操作中的 $w$ 全局互不相同，查询值不保证存在。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/975")[13\. Game]
 
 *题意* 机器人初始等概率位于数组的任意位置，每轮你知道其位置 $i$，可以停止并获得 $A_i$，或让它等概率移动到 $i-1$ 与 $i+1$；位于端点时只能停止。求最优策略下的期望得分，以有理数模 $998244353$ 的形式输出。
 
 *数据范围* $1<=n<=5 times 10^5$，$1<=A_i<=10^12$；保证答案分母与模数互质。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/977")[14\. Local Maxima]
 
 *题意* 将 $1$ 到 $n times m$ 各一次填入 $n times m$ 矩阵。若某格的数不小于其所在行、列的所有数，则称其为局部最大值。求恰好只有一个局部最大值的矩阵数量，模给定素数 $P$。
 
 *数据范围* $1<=n,m<=3000$，$10^8<=P<=10^9+7$，保证 $P$ 为素数。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/993")[15\. 100 Boxes Per Hour...]
 
 *题意* 交互题。每轮依次收到 $100$ 个、共三种颜色的盒子，只知道三种颜色数量的无序集合。只有两个容量不限的箱子，每个非空箱子中只能放同色盒子。看到当前盒子后，可以清空任意箱子，再选择把盒子放入合法箱子或丢弃。要求每轮结束时两箱合计保留至少 $43$ 个盒子；每轮开始两箱均为空。
 
 *数据范围* 正式测试固定 $T=100$ 轮；$0<=A,B,C<=100$，$A+B+C=100$，但不知道数量与颜色的对应关系。盒子顺序预先固定，交互器非自适应；样例为缩小规模，不代表正式限制。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1166")[16\. Designing a PCB]
 
 *题意* 在横轴上依次有 $2n$ 个点，第 $i$ 个坐标为 $(i-1,0)$，每种标签恰出现两次。为每对同标签点构造由水平或竖直线段组成的折线，要求折线不自交、不自接触，且不同折线无公共点；不可行则报告无解。输出每条折线从左端点出发的方向和长度序列。
 
 *数据范围* $1<=n<=1000$；标签为 $1$ 到 $n$，各出现两次。每条折线使用 $1$ 到 $10$ 条正整数长度线段，所有折点坐标的绝对值不超过 $10^4$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" {
-  html.elem("div", attrs: (class: "solution-placeholder"))[]
-}
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1173")[17\. Knowledge Is...]
 
 *题意* 有 $N$ 个项目和 $M$ 名学生，完成项目 $i$ 必须占用整个闭区间 $[L_i, R_i]$。每名学生最多完成两个项目，且同一学生负责的项目时间不能相交，端点重合也不允许。尽可能多地完成项目，并输出每个项目分配给哪名学生，未完成的项目标为 $0$。
 
 *数据范围* $1 <= M <= N <= 3 times 10^5$，$1 <= L_i < R_i <= 10^9$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1174")[18\. Lights On The Road]
 
 *题意* 一条路分为连续的 $N$ 段，在第 $i$ 段安装路灯需花费 $W_i$。选择若干路段安装路灯，使每段自身或至少一个相邻路段装有灯。将所有合法选择方案按总费用非递减排序，输出前 $K$ 个方案的费用；不同方案即使费用相同也分别计数，不足 $K$ 个的位置输出 $-1$。
 
 *数据范围* $1 <= N, K <= 250000$，$0 <= W_i <= 10^9$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1351")[19\. Koosaga's Problem]
 
 *题意* 给定简单连通无向图，统计删去至多两条边后使图变为二分图，且删除边数在所有可行方案中最少的方案数。可以不删边；若至少需要删除三条边，则答案为 $0$。
 
 *数据范围* $3 <= N <= 250000$，$N - 1 <= M <= 250000$；图连通，无自环和重边。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1355")[20\. Rhythm Game]
 
 *题意* 按顺序经过 $N$ 个音符，最多选择击中 $K$ 个。若击中第 $i$ 个音符后，当前连续击中的长度为 $j$，得到 $A_i times C_j$ 分；漏掉音符会中断连击，每段非空连击结束时额外得到 $P$ 分，歌曲结束也会结算最后一段连击。求最大总分。
 
 *数据范围* $1 <= N, K <= 2000$，$-10^9 <= P <= 10^9$，$0 <= A_i <= 10^5$，$-10^5 <= C_j <= 10^5$，且 $C_j >= C_(j + 1)$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1357")[21\. Stone Catch Game]
 
 *题意* 棋盘为 $[0, 10^9] times [0, 10^9]$，白石初始在原点，另有 $N$ 颗黑石，允许重合。Yuto 先手，双方轮流行动：Yuto 将白石向右或向上移动一格；Platina 选择一颗黑石向左或向下移动一格。白石逃出棋盘则 Yuto 获胜；在此之前白石与任一黑石重合，则 Platina 获胜，包括初始已经重合的情况。求双方最优策略下的胜者。
 
 *数据范围* $1 <= N <= 3 times 10^5$，$0 <= x_i, y_i <= 10^9$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1359")[22\. Setting Maps]
 
 *题意* 给定有向图、起点 $S$ 和终点 $E$。可以在任意顶点安装一张地图，包括起终点，每点最多一张，费用为 $C_v$。要求所有从 $S$ 到 $E$ 的路径都经过至少 $K$ 个装有地图的顶点。求费用最小的安装方案并输出这些顶点，或报告无解。
 
 *数据范围* $2 <= N <= 200$，$1 <= M <= 500$，$1 <= K <= 5$，$1 <= C_i <= 10^7$；$S != E$，图无自环和重边。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1811")[23\. How to Move the Beans]
 
 *题意* 给定 $H times W$ 的圆柱形网格，最左列与最右列相邻。部分格子有盘子，部分盘子初始有一颗豆子。Alice 先手，双方轮流选择任意一颗豆子，将它向左、向右或向下移动一格，目标格必须有盘子，且该颗豆子此前没有到过该格，包括初始位置。豆子彼此可区分，允许多颗豆子共处一个盘子。无法移动任何豆子的一方输，求最优策略下的胜者。
 
 *数据范围* $1 <= H, W <= 1000$；每格为无盘子、空盘子或有一颗豆子的盘子，允许初始没有豆子。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1812")[24\. Interesting Coloring]
 
 *题意* 给定没有桥的简单连通无向图。用编号 $1$ 到 $M$ 的颜色给边染色，使有公共端点的边颜色不同，并且对于每条边 $(u, v)$，都存在一条不使用这条边的 $u$ 到 $v$ 路径，其使用的颜色不超过 $8$ 种。输出一种染色，并为每条边输出至多 $8$ 种颜色，保证仅用这些颜色的边就能组成该边的替代路径；颜色集合不必最小。
 
 *数据范围* $3 <= N <= 5555$，$3 <= M <= min(N(N - 1) / 2, 9999)$；图无自环、重边或桥且连通，保证有解。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1813")[25\. Joy with Permutations]
 
 *题意* 交互题，需要唯一确定一个隐藏的 $1$ 到 $N$ 的排列。第一类询问选择三个不同位置，得到这三个位置所对应数值的中位数；第二类询问选择两个不同位置，得到其中数值较小者的位置编号。交互器可以自适应地修改排列，只需与先前所有回答一致，因此必须在排列被唯一确定后再提交答案。
 
 *数据范围* $4 <= N <= 60000$；第一类询问最多 $2N$ 次，第二类询问最多 $2$ 次。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1815")[26\. Lazy Judge]
 
 *题意* 交互题，由程序回答评测器关于某个 $1$ 到 $N$ 的排列的询问。三类询问分别要求：三个不同位置对应数值的中位数、两个不同位置中数值较小者的下标、两个不同位置对应数值的最小值。回答时可以改变排列，但须与此前回答一致。评测器初始耐心为 $2N$，前两类询问每次消耗 $2$，第三类每次消耗 $1$。收到结束指令后，设剩余耐心为 $p$，须构造两个都符合全部回答的排列，并使它们至少在 $ceil(p / 2)$ 个位置上不同。
 
 *数据范围* $4 <= N <= 50000$；三类询问次数为 $q_1, q_2, q_3$，保证 $p = 2N - 2q_1 - 2q_2 - q_3 >= 2$，且每次询问后剩余耐心均不少于 $2$。保证存在满足要求的策略。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1817")[27\. AND Permutation]
 
 *题意* 给定由互异非负整数构成的序列 $a$，保证其中每个数的所有二进制子掩码也都在序列中。重新排列这些数得到 $b$，使每个位置的 $a_i$ 与 $b_i$ 按位与均为 $0$，输出任意合法排列。
 
 *数据范围* $1 <= n < 2^18$，$0 <= a_i < 2^60$；各数互异，集合对子掩码封闭，保证有解。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1823")[28\. Permutation CFG]
 
 *题意* 给定 $1$ 到 $n$ 的排列。定义替换规则：数字 $k$ 替换为该排列中所有不超过 $k$ 的数，保持它们在排列中的相对顺序。从只含 $n$ 的序列开始，每轮同时替换所有元素，共进行 $s$ 轮。回答 $q$ 个询问，每次给出 $k, a$，求最终序列的前 $a$ 项中数字 $k$ 出现的次数。
 
 *数据范围* $2 <= n <= 10^5$，$1 <= s <= 5$，$1 <= q <= 2 times 10^5$，$1 <= k <= n$，$1 <= a <= 10^9$；保证 $a$ 不超过最终序列长度。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1824")[29\. Special Cycle]
 
 *题意* 给定简单无向图，其中 $k$ 条边被标为特殊边。寻找一个简单环，使每条特殊边要么本身在环上，要么两个端点都不在环上。输出任意合法环的顶点顺序，或报告无解。
 
 *数据范围* $2 <= n <= 150$，$1 <= m <= n(n - 1) / 2$，$1 <= k <= m$；无自环和重边，输入的前 $k$ 条边为特殊边。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1825")[30\. The King's Guards]
 
 *题意* 给定村庄间的无向道路，每条道路有修缮费用；另有 $g$ 名守卫，每人只能部署在各自允许的村庄集合中。选择要修缮的道路并部署全部守卫，使每个村庄通过已修缮道路恰好能到达一名守卫，也就是每个连通分量恰有一名守卫。求最小总修缮费用，或报告无解。
 
 *数据范围* $1 <= n <= 300$，$0 <= r <= n(n - 1) / 2$，$1 <= g <= n$，$1 <= c <= 1000$；每对村庄至多一条道路。每名守卫的允许集合大小在 $[1, n]$ 内，不同守卫的允许集合可以重叠。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1839")[31\. Joke]
 
 *题意*
@@ -413,13 +293,10 @@
 
 - $1 <= n <= 100$；$p$ 是 $1$ 到 $n$ 的排列。
 - $0 <= q_i <= n$，$0$ 表示未知，所有非零的 $q_i$ 互不相同。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1840")[32\. K-onstruction]
 
 *题意*
@@ -430,13 +307,10 @@
 
 - 测试组数 $1 <= t <= 1000$，每组 $1 <= K <= 10^6$。
 - 输出满足 $1 <= N <= 30$、$-10^16 <= A_i <= 10^16$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1844")[33\. Cactus]
 
 *题意*
@@ -448,13 +322,10 @@
 - $1 <= n <= 3 times 10^5$，$n - 1 <= m <= 3(n - 1) / 2$。
 - 输入无重边、无自环，顶点编号为 $1$ 到 $n$。
 - 复制后副本顶点编号为 $n + 1$ 到 $2n$，复制操作至多一次。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1854")[34\. Hamiltonian Path]
 
 *题意*
@@ -465,13 +336,10 @@
 
 - 测试组数 $1 <= T <= 10^4$。
 - $1 <= p, q <= n <= 10^6$，所有测试组的 $n$ 之和不超过 $10^6$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1874")[35\. Goldberg Machine 2]
 
 *题意*
@@ -483,13 +351,10 @@
 - $1 <= n, m <= 100$，$1 <= q <= 10^5$，共输出 $q + 1$ 个答案。
 - 两个网格形状相同，左上角均有箭头；每个箭头格子均能在连续投入足够多标记后被访问。
 - 每次修改的位置保证有箭头；答案以十进制输出，不取模且不得有前导零。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1875")[36\. Nein]
 
 *题意*
@@ -499,13 +364,10 @@
 *数据范围*
 
 - $1 <= k <= 18$，$1 <= n <= 10^18$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1876")[37\. MIPT: Connecting People]
 
 *题意*
@@ -516,13 +378,10 @@
 
 - $1 <= n <= 60$，$1 <= h_i <= 3000$，总楼层数 $R = sum_i h_i <= 3000$。
 - $1 <= t_h, t_(v,i) <= 10^6$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1884")[38\. Mission Impossible: Grand Theft Auto]
 
 *题意*
@@ -534,13 +393,10 @@
 - 测试组数 $1 <= T <= 100$。
 - $2 <= n <= 2 times 10^5$，所有测试组的 $n$ 之和不超过 $2 times 10^5$。
 - 每天的两个端点可以相同；此题输出完整计划，不进行交互。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2207")[39\. Edit]
 
 *题意*
@@ -558,13 +414,10 @@
 - 第一棵树至多 $50$ 个顶点，第二棵树至多 $2000$ 个顶点。
 - $1 <= c_1, c_2, c_3 <= 10^6$。
 - 输入按“子节点编号、边权”给出；原英文题面该处标注 $0 <= c_i <= 10^6$，但使用了子节点符号 $c_i$，边权范围的符号疑似笔误。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2210")[40\. Hamilton Path]
 
 *题意*
@@ -576,13 +429,10 @@
 - 测试组数 $T <= 10^5$，每组 $n >= 1$、$m >= 0$。
 - 所有测试组满足 $sum n <= 5 times 10^5$、$sum m <= 10^6$。
 - 顶点编号为 $1$ 到 $n$，允许重边，不允许自环。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2214")[41\. Link Cut Digraph]
 
 *题意*
@@ -593,13 +443,10 @@
 
 - $1 <= n <= 10^5$，$1 <= m <= 250000$。
 - 允许重边和自环；每次加入一条边后均需输出答案。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2548")[42\. Juggler's Trick]
 
 *题意*
@@ -610,13 +457,10 @@
 
 - $1 <= N <= 2 times 10^5$，$1 <= r, b <= N - 1$，$r + b <= N$。
 - 初始字符串长度为 $N$，字符 `R`、`B`、`W` 分别表示红色、蓝色和未染色。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2550")[43\. Lion and Zebra]
 
 *题意*
@@ -628,13 +472,10 @@
 - $2 <= N <= 10^5$，$1 <= Q <= 10^5$。
 - $1 <= v <= N$，$1 <= d <= N - 1$，保证存在距 $v$ 为 $d$ 的顶点。
 - 每次询问输出一个整数时间；各轮游戏独立。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2554")[44\. AND PLUS OR]
 
 *题意*
@@ -645,13 +486,10 @@
 
 - $0 <= N <= 20$，$0 <= A_i <= 10^7$。
 - 下标从 $0$ 到 $2^N - 1$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2563")[45\. Curly Racetrack]
 
 *题意*
@@ -665,13 +503,10 @@
 - $1 <= H, W <= 100$。
 - `1`、`2`、`3`、`4` 分别表示连接上左、下左、上右、下右的固定弯道，不能移除、替换或旋转。
 - `o` 为必须放弯道的空格，`x` 为禁止你放置图块的空格，`.` 为空格且无额外限制。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2570")[46\. Maximal Subsequence]
 
 *题意*
@@ -681,13 +516,10 @@
 *数据范围*
 
 - $1 <= n <= 5 times 10^5$，$1 <= a_i <= 10^9$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2601")[47\. Lucky Tickets]
 
 *题意*
@@ -702,13 +534,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 
 - $2 <= n <= 10^6$，$0 <= s < n$。
 - $2 <= q <= 10^6$，保证 $q$ 为质数；每个数字满足 $0 <= a_i < n$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2605")[48\. Soccer Match]
 
 *题意*
@@ -720,13 +549,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - 测试组数 $1 <= T <= 50000$。
 - $1 <= N, M, K <= 50000$，$M >= 2 K N$；所有测试组的 $M$ 之和不超过 $50000$。
 - 每对朋友关系只出现一次，无自环。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2606")[49\. Gachapon]
 
 *题意*
@@ -738,13 +564,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $1 <= n <= m <= 4000$。
 - $1 <= a_i <= 4000$，$2 <= b_k <= 4000$。
 - 共输出 $m + 1$ 个结果。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2610")[50\. Build a City]
 
 *题意*
@@ -756,13 +579,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - 测试组数 $1 <= T <= 5 times 10^5$，每组 $1 <= n <= 5 times 10^5$。
 - 所有测试组的 $n$ 之和不超过 $5 times 10^5$。
 - $1 <= m <= 4 times 10^9$，$1 <= x_i, y_i <= 10^9$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/2626")[51\. Kilk Not]
 
 *题意*
@@ -774,13 +594,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - 测试组数 $1 <= T <= 10^5$。
 - $1 <= n <= 250000$，$a, b >= 0$；所有测试组的 $n$ 之和不超过 $250000$。
 - 字符串长度为 $n$，问号数恰为 $a + b$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4241")[52\. Angle Beats 2.0]
 
 *题意*
@@ -791,13 +608,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 
 - 测试组数 $1 <= T <= 250000$，每组 $2 <= n, m <= 100$。
 - 所有测试组的棋盘面积之和不超过 $10^6$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4243")[53\. Good Coloring]
 
 *题意*
@@ -810,13 +624,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $1 <= n <= 300000$，$0 <= m <= 300000$，$1 <= k <= n$。
 - 所有测试组的 $n + m$ 之和不超过 $600000$。
 - 图无自环、无重边，初始颜色满足 $1 <= c_i <= k$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4786")[54\. Balance]
 
 *题意*
@@ -827,13 +638,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 
 - $1 <= N <= 50$，$0 <= A_(i,j) <= 35000$。
 - 输出矩阵元素没有 $35000$ 的上界限制。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4788")[55\. Gravity]
 
 *题意*
@@ -844,13 +652,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 
 - $1 <= N, M <= 2000$。
 - 矩阵的 $N$ 行均有 $M$ 个字符，字符集为 `#` 和 `.`。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4793")[56\. Qnp]
 
 *题意*
@@ -861,13 +666,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 
 - $1 <= Q <= 5000$，$1 <= K <= 10^12$。
 - 每次询问的数字总数严格大于 $0$ 且不超过 $70000$；题面未给出各询问数字总数之和的额外限制。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4795")[57\. Taxi]
 
 *题意*
@@ -878,13 +680,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 
 - $1 <= N, M <= 2500$。
 - 每条边的长度为整数 $1 <= l <= 10000$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4802")[58\. Ternary Search]
 
 *题意*
@@ -895,13 +694,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 
 - $1 <= n <= 200000$，$1 <= a_i <= 10^9$，所有 $a_i$ 两两不同。
 - 输出 $n$ 个答案。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4805")[59\. Grammy Sorting]
 
 *题意*
@@ -913,13 +709,10 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $2 <= n <= 1000$，$1 <= m <= 2000$，$A != B$。
 - 图连通，无自环、无重边；初始数字是 $1$ 到 $n$ 的排列。
 - 若目标可实现，保证存在不超过 $10000$ 次操作的方案。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4808")[60\. Great Party]
 
 *题意*
@@ -930,25 +723,19 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 
 - $1 <= n, q <= 10^5$，$1 <= a_i <= 10^6$。
 - 每个询问满足 $1 <= L <= R <= n$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4878")[61\. Easy Problem]
 
 *题意* 有 $n$ 只鸡，第 $i$ 只鸡最多吃 $a_i$ 粒谷物；第 $j$ 个喂食器存有 $c_j$ 粒谷物，可以分配给编号位于 $[l_j, r_j]$ 的鸡。对每个 $i$，仅保留覆盖第 $i$ 只鸡的喂食器，求此时所有鸡合计最多能吃多少粒谷物。
 
 *数据范围* $1 <= t <= 10^4$，$1 <= n, m <= 10^5$，$0 <= a_i, c_j <= 10^9$，$1 <= l_j <= r_j <= n$；所有测试用例的 $n$ 之和、$m$ 之和分别不超过 $10^5$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4881")[62\. Hard Problem]
 
 *题意* 给定数组 $a$ 和整数 $k$。长度为 $2m$ 的连续子段 $a_i, dots, a_(i+2m-1)$，若前后两半的最大值之差的绝对值不超过 $k$，则称其为好子段。求所有好子段的 $(a_(i+m-1) + 10) times f_m$ 之和，模 $998244353$。其中 $f_1 = 3240$，$f_2 = 3081$，$f_3 = 2841$，$f_4 = 343$；对 $i > 4$，有
@@ -956,693 +743,518 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) + 17. $
 
 *数据范围* $1 <= t <= 10^4$，$1 <= n <= 5 times 10^5$，$0 <= k <= min(n, 10)$，$1 <= a_i <= n$；所有测试用例的 $n$ 之和不超过 $5 times 10^5$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4884")[63\. Battleship: New Rules]
 
 *题意* 交互题。在 $n times n$ 棋盘上放置 $k$ 艘形状为 $1 times a$ 或 $a times 1$ 的战舰，$1 <= a <= n$；不同战舰不能边相邻或角相邻。给定战舰数后，其放置方案保证占据格子总数最大。你只知道 $n$，每次可以询问一个格子是否被占据；需要找出一个全空的 $2 times 2$ 子方格，或报告不存在。
 
 *数据范围* $1 <= t <= 100$，$3 <= n <= 1000$，$n <= k <= ceil(n/2)^2$，所有游戏的 $n$ 之和不超过 $5000$。每局最多询问 $6n$ 次，交互器非自适应。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/4887")[64\. Fast Bridges]
 
 *题意* 在 $k times k$ 网格中，相邻格子间移动耗时为 $1$。另有 $n$ 座双向桥，连接不同行、不同列的两个格子；走桥的耗时为两端曼哈顿距离减 $1$。求所有无序格子对之间的最短距离之和，模 $998244353$。
 
 *数据范围* $0 <= n <= 500$，$2 <= k <= 10^9$。每座桥满足 $1 <= x_1 < x_2 <= k$、$1 <= y_1, y_2 <= k$、$y_1 != y_2$，所有桥的端点四元组互不相同。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/6104")[65\. Building Bombing]
 
 *题意* 从左到右有 $N$ 座高度为 $h_i$ 的建筑。若一座建筑严格高于其左侧所有剩余建筑，则从左侧可见。可以炸毁除第 $L$ 座外的一些建筑，要求第 $L$ 座建筑从左侧可见，并且是所有可见建筑中第 $K$ 高的。求最少炸毁数量，无解输出 $-1$。
 
 *数据范围* $1 <= L <= N <= 10^5$，$1 <= K <= 10$，$1 <= h_i <= 10^9$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/6284")[66\. Routes]
 
 *题意* $n$ 个城市分别位于 $m$ 条铁路上，每个城市恰属于一条铁路，并带有 $k$ 种区域标记之一。在同一铁路的相邻城市之间、或同一区域的任意两个城市之间移动，均花费 $1$ 小时。保证任意两座城市之间可达。每条铁路用一个字符串按顺序表示各站区域，求所有无序城市对之间的最短路长度之和。
 
 *数据范围* $1 <= T <= 1000$，$1 <= m <= n <= 10^6$，$1 <= k <= 16$；每条铁路非空，每个区域至少有一个城市。所有测试用例的 $n$ 之和不超过 $5 times 10^6$，至多 $5$ 组测试满足 $k > 8$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/6537")[67\. One, Two, Three]
 
 *题意* 给定仅含 $1, 2, 3$ 的序列 $A$。选择尽可能多的下标三元组 $(i, j, k)$，要求 $i < j < k$，对应元素为 $(1, 2, 3)$ 或 $(3, 2, 1)$，且不同三元组不共用下标。输出最多能选多少组及任意一种最优方案。
 
 *数据范围* $1 <= N <= 6 times 10^5$，$1 <= A_i <= 3$；输出下标从 $0$ 开始。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/6538")[68\. Lonely King]
 
 *题意* 给定以 $1$ 为根、边由父亲指向孩子的树，顶点 $i$ 住着 $C_i$ 人，所有边初始为蓝色。一次操作可以删除一条由蓝边构成的有向路径上的全部边，并用从起点指向终点的一条红边替代；可操作任意次。对于住在不同顶点的有序个人对 $(A, B)$，若 $A$ 所在顶点可以沿任意颜色的有向边到达 $B$ 所在顶点，则计一次接触。求操作后最少的接触总数。
 
 *数据范围* $1 <= N <= 2 times 10^5$，$1 <= C_i <= 10^6$；给定的父亲数组保证构成以 $1$ 为根的树。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/6540")[69\. Beautiful Sequence]
 
 *题意* 给定一个整数序列，可以任意重排。定义优美度为不小于其所有相邻元素的位置数，其中端点只与唯一的邻居比较。求重排后可达到的最大优美度，只需输出数值。
 
 *数据范围* $1 <= T <= 2222$，$1 <= N <= 3 times 10^5$，$1 <= A_i <= 10^9$；所有测试用例的 $N$ 之和不超过 $5 times 10^6$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/6545")[70\. Connect the Dots]
 
 *题意* 横轴上从左到右排列 $N$ 个不同的点，第 $i$ 个点颜色为 $A_i$。在异色点之间连曲线，曲线除端点外必须完全位于横轴上方，不同曲线不能有公共内部点，但可以共用端点。求最多可以连多少条曲线，并输出每条曲线的端点编号。
 
 *数据范围* $1 <= T <= 101$，$2 <= N <= 2 times 10^5$，$2 <= M <= N$，$1 <= A_i <= M$；所有测试用例的 $N$ 之和不超过 $2 times 10^5$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/6546")[71\. Greedy Bipartite Matching]
 
 *题意* 二分图左右各有 $n$ 个点，按权值 $1, 2, dots, q$ 依次加入对应的边，允许重边。定义贪心匹配为使“权值为 $1$ 的边数、权值为 $2$ 的边数、……”组成的序列字典序最大的匹配。对每个 $i$，求只保留权值不超过 $i$ 的边时，贪心匹配的边数。
 
 *数据范围* $0 <= n <= 10^5$，$0 <= q <= 10^3$，权值为 $i$ 的边数 $m_i >= 0$，$sum_i m_i <= 2 times 10^5$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/6551")[72\. Forever Young]
 
 *题意* 给定两个无限长、非负且单调不增的整数数组 $A, B$，它们均仅有有限个非零元素。每次将一个元素加 $1$ 或减 $1$，并保证数组仍然非负、单调不增。求从 $A$ 恰好经过 $k$ 次操作得到 $B$ 的操作序列数，模 $998244353$。
 
 *数据范围* 两个数组的非零元素数均在 $[0, 60]$ 内，非零元素均不超过 $60$，且 $sum_i a_i <= 60$、$sum_i b_i <= 60$；$0 <= k <= 10^6$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/6555")[73\. Sets May Be Good]
 
 *题意* 给定一个无向简单图，求有多少个顶点子集，其诱导子图的边数为偶数。答案模 $998244353$，空集也计入。
 
 *数据范围* $1 <= n <= 1000$，$0 <= m <= n(n-1)/2$；无自环、无重边。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/7412")[74\. Counting Cactus]
 
 *题意* 给定一个无向简单图，保留全部 $n$ 个顶点并选择一个边集，要求得到的图连通，且每条边至多属于一个简单环，即构成仙人掌图。求合法边集数量，模 $998244353$。
 
 *数据范围* $1 <= n <= 13$，$0 <= m <= n(n-1)/2$；无自环、无重边。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/7415")[75\. Fast Spanning Tree]
 
 *题意* 初始有 $n$ 个孤立点，点权为 $w_i$，另有 $m$ 个候选边三元组 $(a_i, b_i, s_i)$。每一步选择编号最小且满足以下条件的候选边：两端位于不同连通分量，且这两个分量的点权总和之和至少为 $s_i$。加入此边并继续，直到没有可选边。输出加入的边数及按加入顺序排列的边编号。
 
 *数据范围* $1 <= n, m <= 3 times 10^5$，$0 <= w_i, s_i <= 10^6$，$1 <= a_i, b_i <= n$，$a_i != b_i$；候选边可以重复。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/7416")[76\. Grammarly]
 
 *题意* 将字符串 $s$ 的所有不同非空子串作为顶点；若 $b$ 是 $a$ 的子串且 $abs(b) + 1 = abs(a)$，则连有向边 $a arrow.r b$。求从 $s$ 出发、终点任意的简单路径数，包含只含 $s$ 的长度为零的路径，答案模 $998244353$。
 
 *数据范围* $1 <= abs(s) <= 3 times 10^5$，$s$ 仅含小写英文字母。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/7417")[77\. Honorable Mention]
 
 *题意* 给定整数数组 $a$，回答 $q$ 个询问 $(l, r, k)$：在区间 $[l, r]$ 中恰好选择 $k$ 个非空且互不相交的连续子段，求被选元素的最大总和。
 
 *数据范围* $1 <= n, q <= 35000$，$-35000 <= a_i <= 35000$；$1 <= l <= r <= n$，$1 <= k <= r-l+1$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/7510")[78\. Independent Set]
 
 *题意* 交互题。有一张未知无向图，可能包含重边和自环，已知点数 $n$。一次询问提交一个可重复的顶点序列：交互器从空集合 $S$ 开始依次处理每个顶点，返回该顶点与当前 $S$ 之间的边数；若边数为零，则将此顶点加入 $S$。利用这些回答恢复图中全部边，包括重数和自环。
 
 *数据范围* $1 <= n <= 4000$，$0 <= m <= 10^4$；每次询问的序列非空，所有询问序列的长度总和不超过 $176000$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/8003")[79\. Anti-Plagiarism]
 
 *题意* 给定两棵无根树 $T_1, T_2$，判断能否向 $T_2$ 添加若干顶点和边，并重新编号，使其变成 $T_1$；等价于判断 $T_1$ 是否包含一个与 $T_2$ 同构的子树。
 
 *数据范围* $1 <= t <= 10^4$，两棵树的点数满足 $2 <= m <= n <= 10^5$；所有测试用例的 $n$ 之和不超过 $5 times 10^5$，$n times m$ 之和不超过 $10^7$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/8004")[80\. Bit Component]
 
 *题意* 将 $1$ 到 $n$ 按某个排列逐行写成二进制，并将各行的最低位对齐。要求所有值为 $1$ 的格子通过上下左右相邻关系组成一个连通块。构造任意一个满足条件的排列，或报告无解。
 
 *数据范围* $1 <= n <= 2 times 10^5$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/8012")[81\. Jumping Lights]
 
 *题意* 给定一棵树，初始所有顶点均未标记。支持三种操作：取消一个点的标记；标记一个点；同时更新所有点，使每个点当且仅当更新前至少有一个邻居被标记时被标记。每次操作后输出被标记的顶点数。
 
 *数据范围* $2 <= n <= 3 times 10^5$，$1 <= q <= 10^6$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/8085")[82\. Bulbasaur]
 
 *题意* 有 $n$ 层、每层 $k$ 个点的有向图，边只从第 $i$ 层指向第 $i+1$ 层，以相邻层之间的邻接矩阵给出。令 $f(i, j)$ 为从第 $i$ 层到第 $j$ 层的两两不共用顶点的路径最大数量，求 $sum_(1 <= i < j <= n) f(i, j)$。
 
 *数据范围* $2 <= n <= 40000$，$1 <= k <= 9$；输入包含 $n-1$ 个 $k times k$ 的 01 邻接矩阵。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/8086")[83\. Cloyster]
 
 *题意* 交互题。一个 $n times n$ 矩阵的元素两两不同，且除全局最大值外，每个格子在八邻域中都至少有一个值更大的格子。每次询问一个格子的值，要求找出全局最大值的位置。
 
 *数据范围* $2 <= n <= 2000$，$1 <= a_(i j) <= 10^9$；最多询问 $3n + 210$ 次，交互器非自适应。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/8184")[84\. Different Summands Counting]
 
 *题意* 考虑所有满足 $a_1 + dots + a_m = n$ 的正整数有序序列。每个序列的贡献为其中不同数值的个数，求所有序列的贡献之和，模 $998244353$。
 
 *数据范围* $1 <= n <= 10^18$，$1 <= m <= 500$，$m <= n$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/8185")[85\. Emerging Tree]
 
 *题意* 从 $n$ 个孤立点开始，按给定顺序加入 $n-1$ 条有向边，最终形成一棵边由根指向后代的有向树。给每个顶点 $v$ 分配互不相同的编号 $p_v$，构成 $1$ 到 $n$ 的排列，要求在加边过程中的每个时刻，对任意顶点 $v$，从 $v$ 可达的全部顶点（含自身）的新编号恰为一段连续整数。构造任意合法排列，或报告无解。
 
 *数据范围* $2 <= n <= 10^6$；输入的完整边集保证构成一棵向外有向树。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/8190")[86\. Jaw-Dropping Set]
 
 *题意* 从 ${1, 2, dots, n}$ 中选择一个子集，要求任意两个不同元素互不整除。先使所选元素数量最大，再使元素总和最小，输出该最小总和。
 
 *数据范围* $1 <= t <= 10^5$，每组 $1 <= n <= 10^9$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/8559")[87\. $k$-coloring]
 
 *题意* 给定一个连通无向简单图，从顶点 $1$ 出发沿边行走，可以重复经过顶点和边。每走 $k$ 步，就给该步经过的边染色；若再次给已染色的边染色则失败。要求构造一个行走序列，使所有边恰好被染色一次，或报告无解。
 
 *数据范围* $1 <= n <= 10^5$，$n-1 <= m <= 10^5$，$1 <= k <= 10$；输出序列包含的顶点数不超过 $1000001$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/8564")[88\. Three Vectors]
 
 *题意* 给定三个两两不同的长度为 $n$ 的 01 向量。构造关于 $n$ 个布尔变量的 2-CNF 公式，要求三个给定向量均满足公式，并使全部满足赋值的数量最少。每个子句是两个文字（变量或其否定）的析取，输出任意最优公式。
 
 *数据范围* $2 <= n <= 10^5$；输出的子句数须满足 $0 <= m <= 2 times 10^5$，允许一个子句的两个文字使用同一变量；空公式视为恒真。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10003")[89\. Decorative Birds]
 
 *题意* 第 $i$ 只鹅的速度为 $A_i$，得分为 $C_i$，在时间闭区间 $[T_i, T_i + L]$ 内等待食物。可以在任意时刻投喂任意多次，每次由当前仍在等待且速度最快的鹅吃到食物，获得其得分，随后该鹅离开。未进食的鹅在等待时间结束后离开。求能获得的最大总分。
 
 *数据范围* $1 <= n <= 3 times 10^5$，$1 <= L <= 10^9$，$1 <= A_i <= n$ 且速度两两不同；$-10^9 <= C_i <= 10^9$，$0 <= T_i <= 10^9$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10007")[90\. Holes in Queue]
 
 *题意* 初始无限队列为 $1, 2, 3, dots$。一次操作同时删除当前队列中位置为 $a_1, dots, a_n$ 的元素，再将剩余元素从 $1$ 开始重新编号。重复相同操作 $d$ 次后，回答 $q$ 个询问：队列第 $x$ 个位置上的数是多少。
 
 *数据范围* $1 <= n, q <= 5 times 10^5$，$1 <= a_i, d, x <= 10^12$，所有 $a_i$ 两两不同，不保证按顺序给出。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10037")[91\. Build Well]
 
 *题意* 有 $n$ 种弧长为整数的砖，每种数量无限。用它们逐层围成周长恰为 $w$ 的圆井，每层的起始偏移也必须为整数。相邻两层不能有位置重合的砖缝，覆盖整圈的一块砖也有一道砖缝。判断能否用两种层配置交替构造无限深的稳定圆井；若能，输出两层各自的起始偏移和砖块序列。
 
 *数据范围* $1 <= n, w <= 3 times 10^5$，$1 <= b_i <= w$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10045")[92\. Permutation Recovery]
 
 *题意* 将 $k$ 个 $1$ 到 $n$ 的排列及其逆排列各写成一行，得到 $2k times n$ 的矩阵，再独立打乱每一列。给定打乱后的矩阵，恢复任意一组可能的 $k$ 个原排列。
 
 *数据范围* $1 <= n <= 4 times 10^4$，$1 <= k <= 7$，$1 <= a_(i,j) <= n$；保证存在合法解。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10081")[93\. Split the Picture]
 
 *题意* 平面上有 $n$ 个带正权的整点，允许重合。用直线 $X = x + 0.5$ 与 $Y = y + 0.5$ 将平面分成四部分，其中 $x, y$ 为整数。代价为四部分点权和的最大值减去最小值。对每个 $x = 1, 2, dots, n - 1$，求自由选择 $y$ 后的最小代价。
 
 *数据范围* $2 <= n <= 2 times 10^5$，$1 <= x_i, y_i <= n$，$1 <= s_i <= 10^9$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10083")[94\. Single-Crossing]
 
 *题意* 给定 $n$ 个长度为 $m$ 的排列，重新安排这些排列的顺序，使任意两个不同的数在各排列中的相对先后关系最多改变一次。输出任意一种合法的排列编号顺序，或报告无解。
 
 *数据范围* $1 <= t <= 5$；每组 $1 <= n <= 10^5$，$1 <= n times m <= 10^6$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10091")[95\. Fractal Maze]
 
 *题意* 从四周封闭的一个方格开始，进行 $n$ 次扩展：将当前迷宫的四个副本按 $2 times 2$ 拼接；新中心向右、上、左、下延伸的四段分隔墙中，恰有一段保持封闭，其余三段各在指定位置开一个单位宽的通道。位置从中心向外按单位线段编号。最终任意两格之间均有唯一简单路径。回答 $q$ 次询问，求两格之间的路径长度，即相邻格移动次数。
 
 *数据范围* $1 <= n <= 30$，$1 <= q <= 1000$；第 $i$ 次扩展的四个通道参数中恰有一个为 $0$，其余位于 $[1, 2^(i - 1)]$；询问的行列坐标均位于 $[1, 2^n]$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10092")[96\. Interactive Primality]
 
 *题意* 交互题。需要依次猜出 $T$ 个隐藏整数。对于当前整数 $x$，每次可以给出整数 $y$，交互器回答 $x + y$ 是素数还是合数。猜出 $x$ 后提交答案，再处理下一个数。所有隐藏整数在交互前固定；除样例外，它们均在指定区间内独立均匀随机生成。
 
 *数据范围* $1 <= T <= 10$，$1 <= x, y <= 10^18$；所有隐藏整数合计最多询问 $8750$ 次，提交最终猜测不计入询问次数。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10094")[97\. Slot Machine]
 
 *题意* 一个 $k$ 位显示屏初始全为问号，机器藏有一个允许前导零的 $k$ 位十进制串；给定所有可能隐藏串的集合。每修改一位显示字符花费 $1$，按按钮免费：若显示串不含问号，机器会回答它与隐藏串按数值比较的大小关系，相等则获胜。求采用最优自适应策略时，保证获胜所需的最小最坏情况费用。
 
 *数据范围* $1 <= T <= 10^4$，$1 <= k <= 5$；每组用长为 $10^k$ 的二进制串表示可能集合，集合非空；所有二进制串的总长度不超过 $10^5$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10539")[98\. Mausoleum]
 
 *题意* 给定一个底边水平、上边界关于横坐标单调的直角多边形，以及严格位于多边形外的起点 $S$ 和内部的终点 $T$。只能选择多边形的一个顶点穿过边界进入内部，其他位置不能穿墙。求从 $S$ 到 $T$ 的最短欧几里得路径长度。
 
 *数据范围* 顶点数 $n$ 为偶数，$4 <= n <= 10^5$；边的坐标参数 $0 <= v_i <= 10^6$，$v_1 = v_n = 0$，每条边长至少为 $1$；$-10^6 <= s_x, s_y <= 2 times 10^6$，$0 < t_x, t_y < 10^6$。答案绝对误差须小于 $10^(-3)$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10542")[99\. Protecting Kingdom]
 
 *题意* 给定一棵带正边长的树，每条边内部标记若干危险点。可以在树上任意选择两个点作为端点，保护它们之间长度不超过 $w$ 的路径。求最多能覆盖多少危险点，路径端点上的危险点也计入。
 
 *数据范围* $2 <= n <= 250000$，$1 <= w, l_i <= 10^18$；第 $i$ 条边连接点 $i + 1$ 与 $p_i$，$1 <= p_i <= i$；危险点位置均为整数且满足 $0 < x_(i,1) < dots < x_(i,k_i) < l_i$，危险点总数不超过 $10^6$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10543")[100\. Square Stamping]
 
 *题意* 平面上给定 $n$ 个不同的点，它们均位于 $y = -9999$、$y = 0$ 或 $y = 9999$ 上。用边长为 $10000$、边与坐标轴平行的正方形覆盖所有点，正方形的内部和边界均算覆盖。求最少需要多少个正方形。
 
 *数据范围* $1 <= n <= 3 times 10^5$，$-10^9 <= x_i <= 10^9$，$y_i in {-9999, 0, 9999}$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10545")[101\. String Rank]
 
 *题意* 定义 $Q_t(s)$ 为字符串 $s$ 中所有长度不超过 $t$ 的不同子序列组成的集合，包含空串。给定字符串 $w$，求最小正整数 $t$，使 $w$ 的任意两个不同后缀的 $Q_t$ 集合均不相同。
 
 *数据范围* $1 <= abs(w) <= 3 times 10^6$；$w$ 仅含小写英文字母。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10688")[102\. AmazingTalker]
 
 *题意* $N$ 个人各有两项能力排名 $(x_i, y_i)$，排名越小能力越强，允许并列。构造一个无自环、无重边的无向友谊图，使每个人的邻居中严格超过一半的人，至少在一项能力上严格强于自己。判断是否有解；若有，输出一个边数不超过 $3.1416 N$ 的方案。
 
 *数据范围* $1 <= N <= 5 times 10^5$，$1 <= x_i, y_i <= N$；若有解，保证存在边数 $M <= 3.1416 N$ 的方案。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10693")[103\. Flappy Bird]
 
 *题意* 在矩形 $[0, L] times [0, H]$ 内，从 $(0, s)$ 移动到 $(L, t)$。有 $N$ 道位于不同横坐标 $x_i$ 的竖直障碍，只允许从纵坐标区间 $[ell_i, r_i]$ 穿过。将移动物体视为点，路径可以是任意曲线。求避开障碍的最短欧几里得路径长度。
 
 *数据范围* $1 <= N <= 3 times 10^5$，$1 <= L, H <= 10^9$，$0 <= s, t <= H$，$0 < x_i < L$，$0 <= ell_i < r_i <= H$；$x_i$ 互异但不保证有序。答案绝对或相对误差不超过 $10^(-6)$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10697")[104\. Judge Error]
 
 *题意* 给定简单无向图的邻接矩阵，判断图是否恰有一个完美匹配。若有，输出这个匹配；每对端点按较小编号在前，所有匹配边按较小端点递增排列。这里无需检查图的边数是否最大。
 
 *数据范围* $2 <= N <= 2000$，$N$ 为偶数；输入为 $N times N$ 的对称二进制矩阵，主对角线全为 $0$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10862")[105\. Advanced Evolution Studies]
 
 *题意* 给定 $n$ 个指定顶点与 $m$ 条限制，每条限制 $(a, b, c, d)$ 要求 $upright("LCA")(a, b)$ 是 $upright("LCA")(c, d)$ 的严格后代。构造一棵满足全部限制的有根树，可以添加新顶点，但总顶点数须在 $[n, 2n]$ 内；输出各点父亲，或报告无解。指定顶点不要求是叶子。
 
 *数据范围* $4 <= n <= 2000$，$1 <= m <= 2000$，$1 <= a, b, c, d <= n$，$a != b$，$c != d$；若有解，保证存在不超过 $2n$ 个顶点的解。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10871")[106\. Joy of Sushi]
 
 *题意* $n$ 位顾客和 $n + 1$ 位厨师分别排在编号连续的位置上；顾客 $i$ 初始有 $a_i$ 个寿司，厨师 $i$ 每分钟制作 $b_i$ 个。每分钟先由前 $n$ 个位置上的厨师给同位置顾客制作寿司，最后一个位置的厨师休息；随后厨师循环右移一位，顾客也在自己的 $n$ 个位置中循环右移一位。顾客每凑满 $k$ 个寿司便立即吃掉。求首次所有顾客剩余寿司均为 $0$ 的分钟数，可以为 $0$；若永远无法达到则输出 $-1$。
 
 *数据范围* $1 <= n <= 2000$，$2 <= k <= 10^6$，$0 <= a_i < k$，$1 <= b_i < k$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/10872")[107\. Kid's Game]
 
 *题意* 在字符为 G、Z、D、P、X 的 $r times c$ 棋盘上博弈，Scallion 先手。Scallion 每次将水平相邻、从左到右为 GZ 的两格改为 DP；Aubergine 每次将竖直相邻、从上到下为 DP 的两格改为 GZ。轮到一方时必须操作，无法操作者输；经过 $10^100$ 回合仍未结束则平局。双方优先争取获胜，其次争取平局，求最终结果。
 
 *数据范围* $2 <= r, c <= 2500$；棋盘仅含上述五种字符。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/11622")[108\. Colorful Doors]
 
 *题意* 桥上从左到右有 $2N$ 扇门，每种颜色 $1, dots, N$ 各出现两次。一个人从最左端不断向右走，每次碰到门时，立即传送到另一扇同色门的右侧。给定长为 $2N - 1$ 的二进制串，记录每对相邻门之间的路段是否曾被走过。判断是否存在符合记录的门颜色排列，若有则构造一个。
 
 *数据范围* $1 <= N <= 10^5$，$abs(s) = 2N - 1$，$s$ 仅含 0 和 1。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/11623")[109\. Construct Point]
 
 *题意* 给定 $Q$ 个顶点坐标为整数的非退化三角形，顶点按逆时针顺序给出。分别判断每个三角形的严格内部是否存在整点；若存在，输出任意一个，否则输出 $(-1, -1)$。
 
 *数据范围* $1 <= Q <= 10^4$；所有顶点坐标均为 $[0, 10^9]$ 内的整数。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/11627")[110\. Rectangles]
 
 *题意* 将 $A times B times C$ 的长方体划分为单位立方体，并将三个方向都视为首尾相接。一个 $a times b times c$ 的环面长方体由三个方向上分别连续的 $a, b, c$ 个坐标组成，允许跨越边界，方向固定。求用这种环面长方体无重叠地恰好铺满全部单位立方体的方案数，对 $10^9 + 7$ 取模；每个方案按所选长方体的集合计数。
 
 *数据范围* $1 <= a < A <= 100$，$1 <= b < B <= 100$，$1 <= c < C <= 100$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/11630")[111\. Simple APSP Problem]
 
 *题意* $H times W$ 网格中有 $N$ 个黑格，其余为白格。只能在白格之间上下左右移动。对所有不同白格组成的无序对，求两格之间最短路径长度之和，对 $10^9 + 7$ 取模。
 
 *数据范围* $1 <= H, W <= 10^6$，$1 <= N <= 30$，$0 <= x_i < H$，$0 <= y_i < W$；黑格互异，至少有一个白格，且所有白格连通。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/11722")[112\. Hamilton]
 
 *题意* 在编号 $1$ 到 $n$ 的一排格子中，从 $a$ 出发、在 $b$ 结束，并恰好访问每格一次。可以免费走到相邻格，也可以花费一次飞行，从当前格 $x$ 到满足 $gcd(x, y) = 1$ 的格子 $y$。求最少飞行次数并构造访问顺序，或报告无解。
 
 *数据范围* $1 <= t <= 10^3$，$2 <= n <= 2 times 10^5$，$1 <= a, b <= n$，$a != b$；所有测试的 $sum n <= 2 times 10^5$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/11723")[113\. I've Got Friends]
 
 *题意* 给定 $n$ 个人之间完整的潜在朋友关系图。每个人须选出两种不同的食物，且任意两人相邻当且仅当他们选择的食物至少有一种相同。判断能否为所有人安排食物；若能，为每个人输出两个不同的食物编号。
 
 *数据范围* $1 <= n <= 10^5$，$0 <= m <= 10^5$；输入为无自环、无重边的无向图。输出的食物编号须为 $[-10^9, 10^9]$ 内的整数。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/12212")[114\. Best Subsequence]
 
 *题意* 给定长度为 $n$ 的正整数序列，选出一个长度恰为 $k$ 的子序列。将选出的数按原顺序首尾相接，代价为每对环上相邻元素之和的最大值。求最小可能代价。
 
 *数据范围* $3 <= k <= n <= 2 times 10^5$，$1 <= w_i <= 10^9$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/12213")[115\. Cool pairs]
 
 *题意* 给定两个 $1$ 到 $n$ 的排列 $p, q$ 和整数 $k$。构造整数数组 $a, b$，满足 $a_(p_1) <= dots <= a_(p_n)$、$b_(q_1) <= dots <= b_(q_n)$，并使满足 $i < j$ 且 $a_i + b_j < 0$ 的数对恰好有 $k$ 个。输出任意方案，或报告无解。
 
 *数据范围* $1 <= n <= 3 times 10^5$，$0 <= k <= n(n - 1) / 2$；输出元素须满足 $-n <= a_i, b_i <= n$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/12302")[116\. Unfair Card Deck]
 
 *题意* 牌堆共有 $30$ 张牌，每种牌有一张或两张，第 $i$ 种牌有固定未知权重 $X_i$。每次抽牌时，若各类剩余张数为 $c_i$，则抽到第 $i$ 类的概率为 $c_i X_i / sum_j c_j X_j$。给定 $m$ 局完整抽牌顺序，估计各类权重 $W_i$；要求所有两类牌的归一化权重比例与真实比例之差严格小于 $0.02$，即 $abs(X_i / (X_i + X_j) - W_i / (W_i + W_j)) < 0.02$。
 
 *数据范围* 正式测试 $m = 100000$，$1 <= n <= 30$，$a_i in {1, 2}$，$sum_i a_i = 30$，每局记录恰有 $30$ 项；$0 < X_i <= 1$，输出须满足 $10^(-300) < W_i <= 1$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/12305")[117\. Permutasino]
 
 *题意* 给定长为 $n$ 的整数向量 $x$，构造至多 $n$ 个 $1$ 到 $n$ 的排列，并为它们分配非负概率，使概率和为 $1$，且随机选中排列的每个位置的期望恰为对应的 $x_i$。输出排列及概率，或报告无解。
 
 *数据范围* $1 <= n <= 500$，$1 <= x_i <= n$；输出排列数 $1 <= k <= n$，每个概率位于 $[0, 1]$。概率总和与 $1$ 的绝对误差不超过 $10^(-6)$，各坐标期望的绝对误差不超过 $10^(-2)$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/12329")[118\. Humongous String]
 
 *题意* 字母表含 $k$ 个不同字符 $s_0, dots, s_(k - 1)$。令 $T_0 = s_0$，$T_i = T_(i - 1) s_(i mod k)$，再将 $T_0, T_1, T_2, dots$ 依次拼接为无限串 $S$。给定 $n, k$，求 $S$ 的长度为 $n$ 的前缀中，不同非空子串的数量。
 
 *数据范围* $1 <= T <= 10^5$；每组 $1 <= n, k <= 10^9$。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
 
+#blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/12332")[119\. K-Triangles]
 
 *题意* 给定 $n times m$ 的整数矩阵。选择一个格子作为直角顶点，并选择四个轴对齐象限中的一个，该象限内与顶点曼哈顿距离严格小于 $k$ 的全部格子构成一个 $k$-三角形；三角形须完整位于矩阵内，四种朝向均可选择。三角形的权值为其全部格子元素之和。求两个没有公共格子的 $k$-三角形的最大权值和。
 
 *数据范围* $1 <= n, m, k <= 1500$，$-10^9 <= A_(i,j) <= 10^9$；保证至少存在两个不相交的合法 $k$-三角形。
-
-#blog.section(default: "collapsed")[
-== Solution
-
-#context if target() == "html" { html.elem("div", attrs: (class: "solution-placeholder"))[] }
+][
 ]
