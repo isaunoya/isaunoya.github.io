@@ -1,8 +1,9 @@
 dist/
 _site-preview/
+.typst-blog/
 .typst-blog-cache/
 data/*.json
 .DS_Store
 node_modules/
-.typst-blog/
 .vscode/settings.json
+/content/drafts/

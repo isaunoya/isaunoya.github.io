@@ -1,5 +1,6 @@
 #import "/.typst-blog/typst/blog.typ" as blog
 
+#let article(solution) = [
 #show: blog.post.with(
   title: "IOI 2026 中国国家集训队作业泛做",
   author: "isaunoya",
@@ -19,6 +20,7 @@
 
 *数据范围* $1 <= n,m <= 3000$；网格字符为 `.` 和 `*`，分别表示空格与阻塞格。
 ][
+#solution("001-cells-blocking")
 ]
 
 #blog.problem[
@@ -28,6 +30,7 @@
 
 *数据范围* $1 <= n <= 10^5$，$n-1 <= m <= 2 times 10^5$，$0 <= k <= 10$，$1 <= q <= 2 times 10^5$；查询距离时保证已有标记点。
 ][
+#solution("002-giant-penguin")
 ]
 
 #blog.problem[
@@ -37,6 +40,7 @@
 
 *数据范围* $1 <= z <= 100$，$1 <= n,m <= 10^6$，$0 <= k <= 1000$；所有测试用例中两个字符串的长度总和不超过 $10^7$。
 ][
+#solution("003-edit-distance-yet-again")
 ]
 
 #blog.problem[
@@ -46,6 +50,7 @@
 
 *数据范围* $1 <= z <= 50000$，$1 <= n <= 3 times 10^5$，$0 <= m <= 4 times 10^5$，$2 <= k <= 10^9$；所有测试用例的 $n$ 之和不超过 $3 times 10^6$，$m$ 之和不超过 $4 times 10^6$。
 ][
+#solution("004-cactus")
 ]
 
 #blog.problem[
@@ -55,6 +60,7 @@
 
 *数据范围* $1 <= z <= 10^5$，$2 <= n <= 2000$，$1 <= k < n$；所有测试用例的 $n^2$ 之和不超过 $4 times 10^7$。保证初始与目标位置集合不同。
 ][
+#solution("005-social-distancing")
 ]
 
 #blog.problem[
@@ -64,6 +70,7 @@
 
 *数据范围* $1 <= z <= 1000$，$1 <= n <= 2 times 10^5$，$0 <= a_i <= 10^9$，$1 <= q < p <= 1000$；所有测试用例的 $n$ 之和不超过 $10^6$。
 ][
+#solution("006-social-justice")
 ]
 
 #blog.problem[
@@ -73,6 +80,7 @@
 
 *数据范围* $1 <= n <= 10^5$，$0 < M <= 10^8$，$abs(a_i) <= 10$，$abs(b_i) <= 5000$，$0 <= c_i <= d_i <= 5000$；至多 $18$ 个 $a_i>0$。所有输入实数精确至小数点后三位；答案误差要求 $abs(v-v^*)/max(v^*,1) <= 10^(-6)$。
 ][
+#solution("007-final-exam")
 ]
 
 #blog.problem[
@@ -82,6 +90,7 @@
 
 *数据范围* $n=3$，$1 <= m <= 150000$，$1 <= a_(i,j) <= 10^9$。
 ][
+#solution("008-travel-around-china")
 ]
 
 #blog.problem[
@@ -91,6 +100,7 @@
 
 *数据范围* $1 <= n <= 20000$；输入是 $1$ 到 $n$ 的排列。保证存在满足操作次数上限的方案，无须最少操作。
 ][
+#solution("009-thanks-to-mikemirzayanov")
 ]
 
 #blog.problem[
@@ -100,6 +110,7 @@
 
 *数据范围* $1 <= n,q <= 5 times 10^5$，$0 <= a_i <= 5 times 10^5$，$1 <= l_i <= r_i <= n$。
 ][
+#solution("010-excluded-min")
 ]
 
 #blog.problem[
@@ -109,6 +120,7 @@
 
 *数据范围* $1 <= n,Q <= 10^5$，$0 <= A_i <= 10^9$，$1 <= L <= R <= n$，$1 <= K <= R-L+1$；当 $K=1$ 时该元素与自身相邻。
 ][
+#solution("011-best-subsequence")
 ]
 
 #blog.problem[
@@ -118,6 +130,7 @@
 
 *数据范围* $1<=n,m<=2 times 10^5$，$1<=w,a<=10^9$；所有插入操作中的 $w$ 全局互不相同，查询值不保证存在。
 ][
+#solution("012-binary-search-tree")
 ]
 
 #blog.problem[
@@ -127,6 +140,7 @@
 
 *数据范围* $1<=n<=5 times 10^5$，$1<=A_i<=10^12$；保证答案分母与模数互质。
 ][
+#solution("013-game")
 ]
 
 #blog.problem[
@@ -136,6 +150,7 @@
 
 *数据范围* $1<=n,m<=3000$，$10^8<=P<=10^9+7$，保证 $P$ 为素数。
 ][
+#solution("014-local-maxima")
 ]
 
 #blog.problem[
@@ -145,6 +160,7 @@
 
 *数据范围* 正式测试固定 $T=100$ 轮；$0<=A,B,C<=100$，$A+B+C=100$，但不知道数量与颜色的对应关系。盒子顺序预先固定，交互器非自适应；样例为缩小规模，不代表正式限制。
 ][
+#solution("015-100-boxes-per-hour")
 ]
 
 #blog.problem[
@@ -154,6 +170,7 @@
 
 *数据范围* $1<=n<=1000$；标签为 $1$ 到 $n$，各出现两次。每条折线使用 $1$ 到 $10$ 条正整数长度线段，所有折点坐标的绝对值不超过 $10^4$。
 ][
+#solution("016-pcb")
 ]
 
 #blog.problem[
@@ -163,6 +180,7 @@
 
 *数据范围* $1 <= M <= N <= 3 times 10^5$，$1 <= L_i < R_i <= 10^9$。
 ][
+#solution("017-knowledge-is")
 ]
 
 #blog.problem[
@@ -172,6 +190,7 @@
 
 *数据范围* $1 <= N, K <= 250000$，$0 <= W_i <= 10^9$。
 ][
+#solution("018-lights-on-the-road")
 ]
 
 #blog.problem[
@@ -181,6 +200,7 @@
 
 *数据范围* $3 <= N <= 250000$，$N - 1 <= M <= 250000$；图连通，无自环和重边。
 ][
+#solution("019-koosagas-problem")
 ]
 
 #blog.problem[
@@ -190,6 +210,7 @@
 
 *数据范围* $1 <= N, K <= 2000$，$-10^9 <= P <= 10^9$，$0 <= A_i <= 10^5$，$-10^5 <= C_j <= 10^5$，且 $C_j >= C_(j + 1)$。
 ][
+#solution("020-rhythm-game")
 ]
 
 #blog.problem[
@@ -199,6 +220,7 @@
 
 *数据范围* $1 <= N <= 3 times 10^5$，$0 <= x_i, y_i <= 10^9$。
 ][
+#solution("021-stone-catch-game")
 ]
 
 #blog.problem[
@@ -208,6 +230,7 @@
 
 *数据范围* $2 <= N <= 200$，$1 <= M <= 500$，$1 <= K <= 5$，$1 <= C_i <= 10^7$；$S != E$，图无自环和重边。
 ][
+#solution("022-setting-maps")
 ]
 
 #blog.problem[
@@ -217,6 +240,7 @@
 
 *数据范围* $1 <= H, W <= 1000$；每格为无盘子、空盘子或有一颗豆子的盘子，允许初始没有豆子。
 ][
+#solution("023-how-to-move-the-beans")
 ]
 
 #blog.problem[
@@ -226,6 +250,7 @@
 
 *数据范围* $3 <= N <= 5555$，$3 <= M <= min(N(N - 1) / 2, 9999)$；图无自环、重边或桥且连通，保证有解。
 ][
+#solution("024-interesting-coloring")
 ]
 
 #blog.problem[
@@ -235,6 +260,7 @@
 
 *数据范围* $4 <= N <= 60000$；第一类询问最多 $2N$ 次，第二类询问最多 $2$ 次。
 ][
+#solution("025-joy-with-permutations")
 ]
 
 #blog.problem[
@@ -242,17 +268,21 @@
 
 *题意* 交互题，由程序回答评测器关于某个 $1$ 到 $N$ 的排列的询问。三类询问分别要求：三个不同位置对应数值的中位数、两个不同位置中数值较小者的下标、两个不同位置对应数值的最小值。回答时可以改变排列，但须与此前回答一致。评测器初始耐心为 $2N$，前两类询问每次消耗 $2$，第三类每次消耗 $1$。收到结束指令后，设剩余耐心为 $p$，须构造两个都符合全部回答的排列，并使它们至少在 $ceil(p / 2)$ 个位置上不同。
 
-*数据范围* $4 <= N <= 50000$；三类询问次数为 $q_1, q_2, q_3$，保证 $p = 2N - 2q_1 - 2q_2 - q_3 >= 2$，且每次询问后剩余耐心均不少于 $2$。保证存在满足要求的策略。
+*数据范围* $4 <= N <= 50000$；三类询问次数为 $q_1, q_2, q_3$，保证 $p = 2N - 2q_1 - 2q_2 - q_3 >= 3$，即每次询问后剩余耐心均大于 $2$。保证存在满足要求的策略。
+
+此处按 #link("https://atcoder.jp/contests/kupc2020/tasks/kupc2020_l?lang=ja")[AtCoder 日文原题]取 $p > 2$；QOJ 中文题面将该条件误译为 $p >= 2$。
 ][
+#solution("026-lazy-judge")
 ]
 
 #blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/1817")[27\. AND Permutation]
 
-*题意* 给定由互异非负整数构成的序列 $a$，保证其中每个数的所有二进制子掩码也都在序列中。重新排列这些数得到 $b$，使每个位置的 $a_i$ 与 $b_i$ 按位与均为 $0$，输出任意合法排列。
+*题意* 给定由互异非负整数构成的序列 $a$，保证将其中任意一个数的二进制表示中的若干个 $1$ 改为 $0$ 后，得到的数仍在序列中。重新排列这些数得到 $b$，使每个位置的 $a_i$ 与 $b_i$ 按位与均为 $0$，输出任意合法排列。
 
-*数据范围* $1 <= n < 2^18$，$0 <= a_i < 2^60$；各数互异，集合对子掩码封闭，保证有解。
+*数据范围* $1 <= n < 2^18$，$0 <= a_i < 2^60$；各数互异，满足上述封闭性，保证有解。
 ][
+#solution("027-and-permutation")
 ]
 
 #blog.problem[
@@ -262,6 +292,7 @@
 
 *数据范围* $2 <= n <= 10^5$，$1 <= s <= 5$，$1 <= q <= 2 times 10^5$，$1 <= k <= n$，$1 <= a <= 10^9$；保证 $a$ 不超过最终序列长度。
 ][
+#solution("028-permutation-cfg")
 ]
 
 #blog.problem[
@@ -271,6 +302,7 @@
 
 *数据范围* $2 <= n <= 150$，$1 <= m <= n(n - 1) / 2$，$1 <= k <= m$；无自环和重边，输入的前 $k$ 条边为特殊边。
 ][
+#solution("029-special-cycle")
 ]
 
 #blog.problem[
@@ -280,6 +312,7 @@
 
 *数据范围* $1 <= n <= 300$，$0 <= r <= n(n - 1) / 2$，$1 <= g <= n$，$1 <= c <= 1000$；每对村庄至多一条道路。每名守卫的允许集合大小在 $[1, n]$ 内，不同守卫的允许集合可以重叠。
 ][
+#solution("030-the-kings-guards")
 ]
 
 #blog.problem[
@@ -294,6 +327,7 @@
 - $1 <= n <= 100$；$p$ 是 $1$ 到 $n$ 的排列。
 - $0 <= q_i <= n$，$0$ 表示未知，所有非零的 $q_i$ 互不相同。
 ][
+#solution("031-joke")
 ]
 
 #blog.problem[
@@ -308,6 +342,7 @@
 - 测试组数 $1 <= t <= 1000$，每组 $1 <= K <= 10^6$。
 - 输出满足 $1 <= N <= 30$、$-10^16 <= A_i <= 10^16$。
 ][
+#solution("032-k-onstruction")
 ]
 
 #blog.problem[
@@ -323,6 +358,7 @@
 - 输入无重边、无自环，顶点编号为 $1$ 到 $n$。
 - 复制后副本顶点编号为 $n + 1$ 到 $2n$，复制操作至多一次。
 ][
+#solution("033-cactus")
 ]
 
 #blog.problem[
@@ -337,6 +373,7 @@
 - 测试组数 $1 <= T <= 10^4$。
 - $1 <= p, q <= n <= 10^6$，所有测试组的 $n$ 之和不超过 $10^6$。
 ][
+#solution("034-hamiltonian-path")
 ]
 
 #blog.problem[
@@ -352,6 +389,7 @@
 - 两个网格形状相同，左上角均有箭头；每个箭头格子均能在连续投入足够多标记后被访问。
 - 每次修改的位置保证有箭头；答案以十进制输出，不取模且不得有前导零。
 ][
+#solution("035-goldberg-machine-2")
 ]
 
 #blog.problem[
@@ -365,6 +403,7 @@
 
 - $1 <= k <= 18$，$1 <= n <= 10^18$。
 ][
+#solution("036-nein")
 ]
 
 #blog.problem[
@@ -379,6 +418,7 @@
 - $1 <= n <= 60$，$1 <= h_i <= 3000$，总楼层数 $R = sum_i h_i <= 3000$。
 - $1 <= t_h, t_(v,i) <= 10^6$。
 ][
+#solution("037-mipt-connecting-people")
 ]
 
 #blog.problem[
@@ -394,6 +434,7 @@
 - $2 <= n <= 2 times 10^5$，所有测试组的 $n$ 之和不超过 $2 times 10^5$。
 - 每天的两个端点可以相同；此题输出完整计划，不进行交互。
 ][
+#solution("038-mission-impossible-grand-theft-auto")
 ]
 
 #blog.problem[
@@ -415,6 +456,7 @@
 - $1 <= c_1, c_2, c_3 <= 10^6$。
 - 输入按“子节点编号、边权”给出；原英文题面该处标注 $0 <= c_i <= 10^6$，但使用了子节点符号 $c_i$，边权范围的符号疑似笔误。
 ][
+#solution("039-edit")
 ]
 
 #blog.problem[
@@ -430,6 +472,7 @@
 - 所有测试组满足 $sum n <= 5 times 10^5$、$sum m <= 10^6$。
 - 顶点编号为 $1$ 到 $n$，允许重边，不允许自环。
 ][
+#solution("040-hamilton-path")
 ]
 
 #blog.problem[
@@ -444,6 +487,7 @@
 - $1 <= n <= 10^5$，$1 <= m <= 250000$。
 - 允许重边和自环；每次加入一条边后均需输出答案。
 ][
+#solution("041-link-cut-digraph")
 ]
 
 #blog.problem[
@@ -458,6 +502,7 @@
 - $1 <= N <= 2 times 10^5$，$1 <= r, b <= N - 1$，$r + b <= N$。
 - 初始字符串长度为 $N$，字符 `R`、`B`、`W` 分别表示红色、蓝色和未染色。
 ][
+#solution("042-jugglers-trick")
 ]
 
 #blog.problem[
@@ -473,6 +518,7 @@
 - $1 <= v <= N$，$1 <= d <= N - 1$，保证存在距 $v$ 为 $d$ 的顶点。
 - 每次询问输出一个整数时间；各轮游戏独立。
 ][
+#solution("043-lion-and-zebra")
 ]
 
 #blog.problem[
@@ -487,6 +533,7 @@
 - $0 <= N <= 20$，$0 <= A_i <= 10^7$。
 - 下标从 $0$ 到 $2^N - 1$。
 ][
+#solution("044-and-plus-or")
 ]
 
 #blog.problem[
@@ -504,6 +551,7 @@
 - `1`、`2`、`3`、`4` 分别表示连接上左、下左、上右、下右的固定弯道，不能移除、替换或旋转。
 - `o` 为必须放弯道的空格，`x` 为禁止你放置图块的空格，`.` 为空格且无额外限制。
 ][
+#solution("045-curly-racetrack")
 ]
 
 #blog.problem[
@@ -517,6 +565,7 @@
 
 - $1 <= n <= 5 times 10^5$，$1 <= a_i <= 10^9$。
 ][
+#solution("046-maximal-subsequence")
 ]
 
 #blog.problem[
@@ -535,6 +584,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $2 <= n <= 10^6$，$0 <= s < n$。
 - $2 <= q <= 10^6$，保证 $q$ 为质数；每个数字满足 $0 <= a_i < n$。
 ][
+#solution("047-lucky-tickets")
 ]
 
 #blog.problem[
@@ -550,6 +600,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $1 <= N, M, K <= 50000$，$M >= 2 K N$；所有测试组的 $M$ 之和不超过 $50000$。
 - 每对朋友关系只出现一次，无自环。
 ][
+#solution("048-soccer-match")
 ]
 
 #blog.problem[
@@ -557,7 +608,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 
 *题意*
 
-单次抽卡得到 $i$ 星物品的概率为 $a_i / sum_(j = 0)^m a_j$，单次抽卡称为 $0$ 级抽卡；一次 $k$ 级抽卡由 $b_k$ 次独立的 $k - 1$ 级抽卡组成。一次 $n$ 级抽卡合法，当且仅当其内部每个 $k$ 级抽卡都至少出现一个星级不低于 $k$ 的物品。设整个抽卡合法的概率为 $q$，在合法条件下 $i$ 星物品数量的条件期望为 $p_i$，对所有 $0 <= i <= m$ 输出 $p_i q$，按有理数模 $998244353$ 表示。
+单次抽卡得到 $i$ 星物品的概率为 $a_i / sum_(j = 0)^m a_j$，单次抽卡称为 $0$ 级抽卡；一次 $k$ 级抽卡由 $b_k$ 次独立的 $k - 1$ 级抽卡组成。一次 $n$ 级抽卡合法，当且仅当对于每个 $0 <= k <= n$，其中包含的每次 $k$ 级抽卡（包括整次 $n$ 级抽卡本身）都至少出现一个星级不低于 $k$ 的物品。设整个抽卡合法的概率为 $q$，在合法条件下 $i$ 星物品数量的条件期望为 $p_i$，对所有 $0 <= i <= m$ 输出 $p_i q$，按有理数模 $998244353$ 表示。
 
 *数据范围*
 
@@ -565,6 +616,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $1 <= a_i <= 4000$，$2 <= b_k <= 4000$。
 - 共输出 $m + 1$ 个结果。
 ][
+#solution("049-gachapon")
 ]
 
 #blog.problem[
@@ -580,6 +632,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - 所有测试组的 $n$ 之和不超过 $5 times 10^5$。
 - $1 <= m <= 4 times 10^9$，$1 <= x_i, y_i <= 10^9$。
 ][
+#solution("050-build-a-city")
 ]
 
 #blog.problem[
@@ -595,6 +648,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $1 <= n <= 250000$，$a, b >= 0$；所有测试组的 $n$ 之和不超过 $250000$。
 - 字符串长度为 $n$，问号数恰为 $a + b$。
 ][
+#solution("051-kilk-not")
 ]
 
 #blog.problem[
@@ -609,6 +663,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - 测试组数 $1 <= T <= 250000$，每组 $2 <= n, m <= 100$。
 - 所有测试组的棋盘面积之和不超过 $10^6$。
 ][
+#solution("052-angle-beats-2")
 ]
 
 #blog.problem[
@@ -625,6 +680,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - 所有测试组的 $n + m$ 之和不超过 $600000$。
 - 图无自环、无重边，初始颜色满足 $1 <= c_i <= k$。
 ][
+#solution("053-good-coloring")
 ]
 
 #blog.problem[
@@ -639,6 +695,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $1 <= N <= 50$，$0 <= A_(i,j) <= 35000$。
 - 输出矩阵元素没有 $35000$ 的上界限制。
 ][
+#solution("054-balance")
 ]
 
 #blog.problem[
@@ -653,6 +710,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $1 <= N, M <= 2000$。
 - 矩阵的 $N$ 行均有 $M$ 个字符，字符集为 `#` 和 `.`。
 ][
+#solution("055-gravity")
 ]
 
 #blog.problem[
@@ -667,6 +725,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $1 <= Q <= 5000$，$1 <= K <= 10^12$。
 - 每次询问的数字总数严格大于 $0$ 且不超过 $70000$；题面未给出各询问数字总数之和的额外限制。
 ][
+#solution("056-qnp")
 ]
 
 #blog.problem[
@@ -681,6 +740,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $1 <= N, M <= 2500$。
 - 每条边的长度为整数 $1 <= l <= 10000$。
 ][
+#solution("057-taxi")
 ]
 
 #blog.problem[
@@ -695,6 +755,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $1 <= n <= 200000$，$1 <= a_i <= 10^9$，所有 $a_i$ 两两不同。
 - 输出 $n$ 个答案。
 ][
+#solution("058-ternary-search")
 ]
 
 #blog.problem[
@@ -710,6 +771,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - 图连通，无自环、无重边；初始数字是 $1$ 到 $n$ 的排列。
 - 若目标可实现，保证存在不超过 $10000$ 次操作的方案。
 ][
+#solution("059-grammy-sorting")
 ]
 
 #blog.problem[
@@ -724,6 +786,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 - $1 <= n, q <= 10^5$，$1 <= a_i <= 10^6$。
 - 每个询问满足 $1 <= L <= R <= n$。
 ][
+#solution("060-great-party")
 ]
 
 #blog.problem[
@@ -733,6 +796,7 @@ $ product_(i = 1)^q (a_i + i) + sum_(i = 1)^q 2^(i - 1) a_i. $
 
 *数据范围* $1 <= t <= 10^4$，$1 <= n, m <= 10^5$，$0 <= a_i, c_j <= 10^9$，$1 <= l_j <= r_j <= n$；所有测试用例的 $n$ 之和、$m$ 之和分别不超过 $10^5$。
 ][
+#solution("061-easy-problem")
 ]
 
 #blog.problem[
@@ -744,6 +808,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= t <= 10^4$，$1 <= n <= 5 times 10^5$，$0 <= k <= min(n, 10)$，$1 <= a_i <= n$；所有测试用例的 $n$ 之和不超过 $5 times 10^5$。
 ][
+#solution("062-hard-problem")
 ]
 
 #blog.problem[
@@ -753,6 +818,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= t <= 100$，$3 <= n <= 1000$，$n <= k <= ceil(n/2)^2$，所有游戏的 $n$ 之和不超过 $5000$。每局最多询问 $6n$ 次，交互器非自适应。
 ][
+#solution("063-battleship-new-rules")
 ]
 
 #blog.problem[
@@ -762,6 +828,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $0 <= n <= 500$，$2 <= k <= 10^9$。每座桥满足 $1 <= x_1 < x_2 <= k$、$1 <= y_1, y_2 <= k$、$y_1 != y_2$，所有桥的端点四元组互不相同。
 ][
+#solution("064-fast-bridges")
 ]
 
 #blog.problem[
@@ -771,6 +838,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= L <= N <= 10^5$，$1 <= K <= 10$，$1 <= h_i <= 10^9$。
 ][
+#solution("065-building-bombing")
 ]
 
 #blog.problem[
@@ -780,6 +848,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= T <= 1000$，$1 <= m <= n <= 10^6$，$1 <= k <= 16$；每条铁路非空，每个区域至少有一个城市。所有测试用例的 $n$ 之和不超过 $5 times 10^6$，至多 $5$ 组测试满足 $k > 8$。
 ][
+#solution("066-routes")
 ]
 
 #blog.problem[
@@ -789,6 +858,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= N <= 6 times 10^5$，$1 <= A_i <= 3$；输出下标从 $0$ 开始。
 ][
+#solution("067-good-tuples")
 ]
 
 #blog.problem[
@@ -798,6 +868,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= N <= 2 times 10^5$，$1 <= C_i <= 10^6$；给定的父亲数组保证构成以 $1$ 为根的树。
 ][
+#solution("068-lonely-king")
 ]
 
 #blog.problem[
@@ -807,15 +878,17 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= T <= 2222$，$1 <= N <= 3 times 10^5$，$1 <= A_i <= 10^9$；所有测试用例的 $N$ 之和不超过 $5 times 10^6$。
 ][
+#solution("069-beautiful-sequence")
 ]
 
 #blog.problem[
 = #link("https://qoj.ac/contest/2550/problem/6545")[70\. Connect the Dots]
 
-*题意* 横轴上从左到右排列 $N$ 个不同的点，第 $i$ 个点颜色为 $A_i$。在异色点之间连曲线，曲线除端点外必须完全位于横轴上方，不同曲线不能有公共内部点，但可以共用端点。求最多可以连多少条曲线，并输出每条曲线的端点编号。
+*题意* 横轴上从左到右排列 $N$ 个不同的点，第 $i$ 个点颜色为 $A_i$。在异色点之间连曲线，每对点至多连接一次。曲线除端点外必须完全位于横轴上方，不同曲线不能有公共内部点，但可以共用端点。求最多可以连多少条曲线，并输出每条曲线的端点编号。
 
 *数据范围* $1 <= T <= 101$，$2 <= N <= 2 times 10^5$，$2 <= M <= N$，$1 <= A_i <= M$；所有测试用例的 $N$ 之和不超过 $2 times 10^5$。
 ][
+#solution("070-connect-the-dots")
 ]
 
 #blog.problem[
@@ -825,6 +898,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $0 <= n <= 10^5$，$0 <= q <= 10^3$，权值为 $i$ 的边数 $m_i >= 0$，$sum_i m_i <= 2 times 10^5$。
 ][
+#solution("071-greedy-bipartite-matching")
 ]
 
 #blog.problem[
@@ -834,6 +908,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* 两个数组的非零元素数均在 $[0, 60]$ 内，非零元素均不超过 $60$，且 $sum_i a_i <= 60$、$sum_i b_i <= 60$；$0 <= k <= 10^6$。
 ][
+#solution("072-forever-young")
 ]
 
 #blog.problem[
@@ -843,6 +918,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 1000$，$0 <= m <= n(n-1)/2$；无自环、无重边。
 ][
+#solution("073-sets-may-be-good")
 ]
 
 #blog.problem[
@@ -852,6 +928,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 13$，$0 <= m <= n(n-1)/2$；无自环、无重边。
 ][
+#solution("074-counting-cactus")
 ]
 
 #blog.problem[
@@ -861,6 +938,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n, m <= 3 times 10^5$，$0 <= w_i, s_i <= 10^6$，$1 <= a_i, b_i <= n$，$a_i != b_i$；候选边可以重复。
 ][
+#solution("075-fast-spanning-tree")
 ]
 
 #blog.problem[
@@ -870,6 +948,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= abs(s) <= 3 times 10^5$，$s$ 仅含小写英文字母。
 ][
+#solution("076-substring-paths")
 ]
 
 #blog.problem[
@@ -879,6 +958,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n, q <= 35000$，$-35000 <= a_i <= 35000$；$1 <= l <= r <= n$，$1 <= k <= r-l+1$。
 ][
+#solution("077-honorable-mention")
 ]
 
 #blog.problem[
@@ -888,6 +968,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 4000$，$0 <= m <= 10^4$；每次询问的序列非空，所有询问序列的长度总和不超过 $176000$。
 ][
+#solution("078-independent-set")
 ]
 
 #blog.problem[
@@ -897,6 +978,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= t <= 10^4$，两棵树的点数满足 $2 <= m <= n <= 10^5$；所有测试用例的 $n$ 之和不超过 $5 times 10^5$，$n times m$ 之和不超过 $10^7$。
 ][
+#solution("079-original-trees")
 ]
 
 #blog.problem[
@@ -906,6 +988,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 2 times 10^5$。
 ][
+#solution("080-bit-component")
 ]
 
 #blog.problem[
@@ -915,6 +998,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $2 <= n <= 3 times 10^5$，$1 <= q <= 10^6$。
 ][
+#solution("081-jumping-lights")
 ]
 
 #blog.problem[
@@ -924,6 +1008,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $2 <= n <= 40000$，$1 <= k <= 9$；输入包含 $n-1$ 个 $k times k$ 的 01 邻接矩阵。
 ][
+#solution("082-bulbasaur")
 ]
 
 #blog.problem[
@@ -933,6 +1018,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $2 <= n <= 2000$，$1 <= a_(i j) <= 10^9$；最多询问 $3n + 210$ 次，交互器非自适应。
 ][
+#solution("083-cloyster")
 ]
 
 #blog.problem[
@@ -942,6 +1028,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 10^18$，$1 <= m <= 500$，$m <= n$。
 ][
+#solution("084-ordered-compositions")
 ]
 
 #blog.problem[
@@ -951,6 +1038,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $2 <= n <= 10^6$；输入的完整边集保证构成一棵向外有向树。
 ][
+#solution("085-emerging-tree")
 ]
 
 #blog.problem[
@@ -960,6 +1048,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= t <= 10^5$，每组 $1 <= n <= 10^9$。
 ][
+#solution("086-interesting-subsets")
 ]
 
 #blog.problem[
@@ -969,6 +1058,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 10^5$，$n-1 <= m <= 10^5$，$1 <= k <= 10$；输出序列包含的顶点数不超过 $1000001$。
 ][
+#solution("087-k-coloring")
 ]
 
 #blog.problem[
@@ -978,6 +1068,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $2 <= n <= 10^5$；输出的子句数须满足 $0 <= m <= 2 times 10^5$，允许一个子句的两个文字使用同一变量；空公式视为恒真。
 ][
+#solution("088-two-cnf")
 ]
 
 #blog.problem[
@@ -987,6 +1078,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 3 times 10^5$，$1 <= L <= 10^9$，$1 <= A_i <= n$ 且速度两两不同；$-10^9 <= C_i <= 10^9$，$0 <= T_i <= 10^9$。
 ][
+#solution("089-decorative-birds")
 ]
 
 #blog.problem[
@@ -996,6 +1088,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n, q <= 5 times 10^5$，$1 <= a_i, d, x <= 10^12$，所有 $a_i$ 两两不同，不保证按顺序给出。
 ][
+#solution("090-holes-in-queue")
 ]
 
 #blog.problem[
@@ -1005,6 +1098,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n, w <= 3 times 10^5$，$1 <= b_i <= w$。
 ][
+#solution("091-build-well")
 ]
 
 #blog.problem[
@@ -1014,6 +1108,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 4 times 10^4$，$1 <= k <= 7$，$1 <= a_(i,j) <= n$；保证存在合法解。
 ][
+#solution("092-permutation-recovery")
 ]
 
 #blog.problem[
@@ -1023,6 +1118,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $2 <= n <= 2 times 10^5$，$1 <= x_i, y_i <= n$，$1 <= s_i <= 10^9$。
 ][
+#solution("093-four-parts")
 ]
 
 #blog.problem[
@@ -1032,6 +1128,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= t <= 5$；每组 $1 <= n <= 10^5$，$1 <= n times m <= 10^6$。
 ][
+#solution("094-single-crossing")
 ]
 
 #blog.problem[
@@ -1041,6 +1138,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 30$，$1 <= q <= 1000$；第 $i$ 次扩展的四个通道参数中恰有一个为 $0$，其余位于 $[1, 2^(i - 1)]$；询问的行列坐标均位于 $[1, 2^n]$。
 ][
+#solution("095-fractal-maze")
 ]
 
 #blog.problem[
@@ -1050,6 +1148,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= T <= 10$，$1 <= x, y <= 10^18$；所有隐藏整数合计最多询问 $8750$ 次，提交最终猜测不计入询问次数。
 ][
+#solution("096-interactive-primality")
 ]
 
 #blog.problem[
@@ -1059,6 +1158,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= T <= 10^4$，$1 <= k <= 5$；每组用长为 $10^k$ 的二进制串表示可能集合，集合非空；所有二进制串的总长度不超过 $10^5$。
 ][
+#solution("097-slot-machine")
 ]
 
 #blog.problem[
@@ -1068,6 +1168,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* 顶点数 $n$ 为偶数，$4 <= n <= 10^5$；边的坐标参数 $0 <= v_i <= 10^6$，$v_1 = v_n = 0$，每条边长至少为 $1$；$-10^6 <= s_x, s_y <= 2 times 10^6$，$0 < t_x, t_y < 10^6$。答案绝对误差须小于 $10^(-3)$。
 ][
+#solution("098-mausoleum")
 ]
 
 #blog.problem[
@@ -1077,6 +1178,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $2 <= n <= 250000$，$1 <= w, l_i <= 10^18$；第 $i$ 条边连接点 $i + 1$ 与 $p_i$，$1 <= p_i <= i$；危险点位置均为整数且满足 $0 < x_(i,1) < dots < x_(i,k_i) < l_i$，危险点总数不超过 $10^6$。
 ][
+#solution("099-protecting-kingdom")
 ]
 
 #blog.problem[
@@ -1086,6 +1188,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 3 times 10^5$，$-10^9 <= x_i <= 10^9$，$y_i in {-9999, 0, 9999}$。
 ][
+#solution("100-square-stamping")
 ]
 
 #blog.problem[
@@ -1095,6 +1198,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= abs(w) <= 3 times 10^6$；$w$ 仅含小写英文字母。
 ][
+#solution("101-subsequence-rank")
 ]
 
 #blog.problem[
@@ -1104,6 +1208,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= N <= 5 times 10^5$，$1 <= x_i, y_i <= N$；若有解，保证存在边数 $M <= 3.1416 N$ 的方案。
 ][
+#solution("102-amazingtalker")
 ]
 
 #blog.problem[
@@ -1113,6 +1218,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= N <= 3 times 10^5$，$1 <= L, H <= 10^9$，$0 <= s, t <= H$，$0 < x_i < L$，$0 <= ell_i < r_i <= H$；$x_i$ 互异但不保证有序。答案绝对或相对误差不超过 $10^(-6)$。
 ][
+#solution("103-flappy-bird")
 ]
 
 #blog.problem[
@@ -1122,6 +1228,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $2 <= N <= 2000$，$N$ 为偶数；输入为 $N times N$ 的对称二进制矩阵，主对角线全为 $0$。
 ][
+#solution("104-judge-error")
 ]
 
 #blog.problem[
@@ -1131,6 +1238,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $4 <= n <= 2000$，$1 <= m <= 2000$，$1 <= a, b, c, d <= n$，$a != b$，$c != d$；若有解，保证存在不超过 $2n$ 个顶点的解。
 ][
+#solution("105-phylogenetic-tree")
 ]
 
 #blog.problem[
@@ -1140,6 +1248,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 2000$，$2 <= k <= 10^6$，$0 <= a_i < k$，$1 <= b_i < k$。
 ][
+#solution("106-joy-of-sushi")
 ]
 
 #blog.problem[
@@ -1149,6 +1258,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $2 <= r, c <= 2500$；棋盘仅含上述五种字符。
 ][
+#solution("107-kids-game")
 ]
 
 #blog.problem[
@@ -1158,6 +1268,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= N <= 10^5$，$abs(s) = 2N - 1$，$s$ 仅含 0 和 1。
 ][
+#solution("108-colorful-doors")
 ]
 
 #blog.problem[
@@ -1167,6 +1278,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= Q <= 10^4$；所有顶点坐标均为 $[0, 10^9]$ 内的整数。
 ][
+#solution("109-construct-point")
 ]
 
 #blog.problem[
@@ -1176,6 +1288,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= a < A <= 100$，$1 <= b < B <= 100$，$1 <= c < C <= 100$。
 ][
+#solution("110-rectangles")
 ]
 
 #blog.problem[
@@ -1185,6 +1298,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= H, W <= 10^6$，$1 <= N <= 30$，$0 <= x_i < H$，$0 <= y_i < W$；黑格互异，至少有一个白格，且所有白格连通。
 ][
+#solution("111-simple-apsp-problem")
 ]
 
 #blog.problem[
@@ -1194,6 +1308,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= t <= 10^3$，$2 <= n <= 2 times 10^5$，$1 <= a, b <= n$，$a != b$；所有测试的 $sum n <= 2 times 10^5$。
 ][
+#solution("112-hamilton")
 ]
 
 #blog.problem[
@@ -1203,15 +1318,17 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 10^5$，$0 <= m <= 10^5$；输入为无自环、无重边的无向图。输出的食物编号须为 $[-10^9, 10^9]$ 内的整数。
 ][
+#solution("113-ive-got-friends")
 ]
 
 #blog.problem[
-= #link("https://qoj.ac/contest/2550/problem/12212")[114\. Best Subsequence]
+= #link("https://qoj.ac/contest/2550/problem/12212")[114\. Best Subsequence] <qoj-2550-114>
 
 *题意* 给定长度为 $n$ 的正整数序列，选出一个长度恰为 $k$ 的子序列。将选出的数按原顺序首尾相接，代价为每对环上相邻元素之和的最大值。求最小可能代价。
 
 *数据范围* $3 <= k <= n <= 2 times 10^5$，$1 <= w_i <= 10^9$。
 ][
+#solution("114-best-subsequence")
 ]
 
 #blog.problem[
@@ -1221,6 +1338,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 3 times 10^5$，$0 <= k <= n(n - 1) / 2$；输出元素须满足 $-n <= a_i, b_i <= n$。
 ][
+#solution("115-cool-pairs")
 ]
 
 #blog.problem[
@@ -1230,6 +1348,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* 正式测试 $m = 100000$，$1 <= n <= 30$，$a_i in {1, 2}$，$sum_i a_i = 30$，每局记录恰有 $30$ 项；$0 < X_i <= 1$，输出须满足 $10^(-300) < W_i <= 1$。
 ][
+#solution("116-unfair-card-deck")
 ]
 
 #blog.problem[
@@ -1239,6 +1358,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n <= 500$，$1 <= x_i <= n$；输出排列数 $1 <= k <= n$，每个概率位于 $[0, 1]$。概率总和与 $1$ 的绝对误差不超过 $10^(-6)$，各坐标期望的绝对误差不超过 $10^(-2)$。
 ][
+#solution("117-permutasino")
 ]
 
 #blog.problem[
@@ -1248,6 +1368,7 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= T <= 10^5$；每组 $1 <= n, k <= 10^9$。
 ][
+#solution("118-humongous-string")
 ]
 
 #blog.problem[
@@ -1257,4 +1378,6 @@ $ f_i = 223 times f_(i-1) + 229 times f_(i-2) + 239 times f_(i-3) times f_(i-4) 
 
 *数据范围* $1 <= n, m, k <= 1500$，$-10^9 <= A_(i,j) <= 10^9$；保证至少存在两个不相交的合法 $k$-三角形。
 ][
+#solution("119-k-triangles")
+]
 ]
