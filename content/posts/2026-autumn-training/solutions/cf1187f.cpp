@@ -14,20 +14,20 @@ vc<vc<mi>> block_probabilities(const vl &L, const vl &R, int k) {
   vc<vc<mi>> w(m, vc<mi>(q + 1));
   rep(l, m) {
     w[l][0] = 1;
-    rep(len, 1, min(q, m - l) + 1) {
-      int r = l + len + 1;
+    rep(t, 1, min(q, m - l) + 1) {
+      int r = l + t + 1;
       ll ml = L[r - 1], mr = R[r - 1];
       mi prod = 1;
       for (int s = r - 1; s >= l; s--) {
         cmax(ml, L[s]);
         cmin(mr, R[s]);
         prod *= il[s];
-        mi same = mi(max(mr - ml, ll(0))) * prod;
+        mi c = mi(max(mr - ml, ll(0))) * prod;
         mi pre = s == l ? mi(1) : w[l][s - l - 1];
         if ((r - s - 1) & 1)
-          w[l][len] -= pre * same;
+          w[l][t] -= pre * c;
         else
-          w[l][len] += pre * same;
+          w[l][t] += pre * c;
       }
     }
   }
@@ -41,10 +41,10 @@ vc<mi> factorial_moments(const vc<vc<mi>> &w, int k) {
   rep(i, 1, m + 1) {
     dp[i] = dp[i - 1];
     rep(j, 1, min(i, q) + 1) {
-      rep(len, 1, min(i, j) + 1) {
-        int l = i - len;
-        mi pre = l == 0 ? mi(j == len) : dp[l - 1][j - len];
-        dp[i][j] += pre * w[l][len];
+      rep(t, 1, min(i, j) + 1) {
+        int l = i - t;
+        mi pre = l == 0 ? mi(j == t) : dp[l - 1][j - t];
+        dp[i][j] += pre * w[l][t];
       }
     }
   }
@@ -73,11 +73,11 @@ mi expected_moment(const vl &L, const vl &R, int k) {
 }
 
 void solve(int k = 2) {
-  int N;
-  cin >> N;
-  vl L(N), R(N);
-  rep(i, N) cin >> L[i];
-  rep(i, N) {
+  int n;
+  cin >> n;
+  vl L(n), R(n);
+  rep(i, n) cin >> L[i];
+  rep(i, n) {
     cin >> R[i];
     R[i]++;
   }
