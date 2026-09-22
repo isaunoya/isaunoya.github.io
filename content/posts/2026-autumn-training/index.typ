@@ -20,3 +20,14 @@
 ][
 #include "solutions/cf1187f.typ"
 ]
+
+#blog.problem[
+= #link("https://atcoder.jp/contests/abc476/tasks/abc476_g")[ABC476G. Increasing Popcount] <abc476g>
+
+*题意* 将 $upright("popcount")(L), dots, upright("popcount")(R)$ 划分成尽量少的严格递增子序列，求最少个数。
+
+*数据范围* $1 <= T <= 10^4$，$1 <= L <= R <= 10^18$。
+
+][
+#include "solutions/abc476g.typ"
+]
