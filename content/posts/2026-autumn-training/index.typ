@@ -5,7 +5,7 @@
   author: "isaunoya",
   slug: "2026-autumn-training",
   date: "2026-09-22",
-  tags: ("acm", "2026-autumn"),
+  tags: ("acm",),
   excerpt: "2026 秋季做题记录",
   published: true,
 )
