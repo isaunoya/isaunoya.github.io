@@ -6,7 +6,7 @@
   slug: "2026-autumn-training",
   date: "2026-09-22",
   tags: ("acm", "2026-autumn"),
-  excerpt: "2026 秋季做题记录，收录题目分析、可复用的思路与推广。",
+  excerpt: "2026 秋季做题记录",
   published: true,
 )
 
