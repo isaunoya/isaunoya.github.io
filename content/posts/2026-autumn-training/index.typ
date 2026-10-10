@@ -31,3 +31,14 @@
 ][
 #include "solutions/abc476g.typ"
 ]
+
+#blog.problem[
+= #link("https://atcoder.jp/contests/abc478/tasks/abc478_g")[ABC478G. Division Point Hull] <abc478g>
+
+*题意* 给定按顺序编号的平面点 $P_i$。对所有 $i<j$，取线段 $P_i P_j$ 的 $p:q$ 内分点，求这些点的凸包面积，以最简分数输出。
+
+*数据范围* $2 <= N <= 10^5$，$1 <= p < q <= 10$，$abs(X_i),abs(Y_i) <= 10^7$。
+
+][
+#include "solutions/abc478g.typ"
+]
