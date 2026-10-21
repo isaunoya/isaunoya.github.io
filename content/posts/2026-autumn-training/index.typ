@@ -6,7 +6,7 @@
   slug: "2026-autumn-training",
   date: "2026-09-22",
   tags: ("acm",),
-  excerpt: "从 CF1187F 的期望计算、ABC476G 的位计数，到 ABC478G 的凸包面积：记录推导、复杂度与实现。",
+  excerpt: "2026 秋季做题记录",
   published: true,
 )
 
