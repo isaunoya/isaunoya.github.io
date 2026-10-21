@@ -7,7 +7,7 @@
   slug: "qoj-2550",
   date: "2026-09-12",
   tags: ("acm",),
-  excerpt: "QOJ Contest 2550 泛做记录",
+  excerpt: "整理 QOJ Contest 2550 的 119 道题意与数据范围，持续补充题解；可通过目录筛选已完成的部分。",
   published: true,
 )
 

@@ -6,6 +6,9 @@
     "author": "isaunoya",
     "language": "zh-CN"
   },
+  "home": {
+    "layout": "posts"
+  },
   "profile": {
     "name": "isaunoya",
     "title": "",
