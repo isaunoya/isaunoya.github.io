@@ -9,7 +9,10 @@
     "serve": "typst-blog serve",
     "dev": "typst-blog dev",
     "postinstall": "typst-blog setup --editor",
-    "pdf": "typst-blog pdf"
+    "pdf": "typst-blog pdf",
+    "build:lectures": "node scripts/build-presentations.mjs lectures",
+    "prebuild": "node scripts/build-presentations.mjs",
+    "build:editorials": "node scripts/build-presentations.mjs editorials"
   },
   "dependencies": {
     "@isaunoya/typst-blog": "file:../typst-blog"

@@ -7,3 +7,10 @@ data/*.json
 node_modules/
 .vscode/settings.json
 /content/drafts/
+
+# Generated from lecture/editorial Typst sources by npm run build
+/public/assets/lectures/*.pdf
+/public/assets/lectures/*.tmp.pdf
+
+/public/assets/editorials/*.pdf
+/public/assets/editorials/*.tmp.pdf

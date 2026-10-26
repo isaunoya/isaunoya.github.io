@@ -1,0 +1,424 @@
+{
+  "lectureTopics": {
+    "sqrt-decomposition": [
+      {
+        "topic": "基础区间加和区间和",
+        "url": null,
+        "kind": "model"
+      },
+      {
+        "topic": "动态 mex",
+        "url": null,
+        "kind": "model"
+      },
+      {
+        "topic": "P4137",
+        "url": "https://www.luogu.com.cn/problem/P4137",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1716E",
+        "url": "https://codeforces.com/problemset/problem/1716/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "HDU7337",
+        "url": "https://acm.hdu.edu.cn/showproblem.php?pid=7337",
+        "kind": "problem"
+      },
+      {
+        "topic": "JOISC2014 历史研究",
+        "url": "https://www.luogu.com.cn/problem/AT_joisc2014_c",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF763E",
+        "url": "https://codeforces.com/problemset/problem/763/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "P5906",
+        "url": "https://www.luogu.com.cn/problem/P5906",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF797E",
+        "url": "https://codeforces.com/problemset/problem/797/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "ABC359G",
+        "url": "https://atcoder.jp/contests/abc359/tasks/abc359_g",
+        "kind": "problem"
+      },
+      {
+        "topic": "MONSTER",
+        "url": "https://www.codechef.com/problems/MONSTER",
+        "kind": "problem"
+      },
+      {
+        "topic": "百度之星2023颜色交集",
+        "url": "https://www.matiji.net/exam/brushquestion/32/4347/179CE77A7B772D15A8C00DD8198AAC74",
+        "kind": "problem"
+      },
+      {
+        "topic": "区间模k最小值 / P7811",
+        "url": "https://www.luogu.com.cn/problem/P7811",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1039D",
+        "url": "https://codeforces.com/problemset/problem/1039/D",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF587F",
+        "url": "https://codeforces.com/problemset/problem/587/F",
+        "kind": "problem"
+      },
+      {
+        "topic": "P5309",
+        "url": "https://www.luogu.com.cn/problem/P5309",
+        "kind": "problem"
+      },
+      {
+        "topic": "COUNTARI",
+        "url": "https://www.codechef.com/problems/COUNTARI",
+        "kind": "problem"
+      },
+      {
+        "topic": "Subset",
+        "url": "https://www.hackerrank.com/contests/countercode/challenges/subset/problem",
+        "kind": "problem"
+      },
+      {
+        "topic": "P4062",
+        "url": "https://www.luogu.com.cn/problem/P4062",
+        "kind": "problem"
+      },
+      {
+        "topic": "动态 Fourier / 锅",
+        "url": "https://zijian-lv.com/problem/45",
+        "kind": "problem"
+      },
+      {
+        "topic": "P5443",
+        "url": "https://www.luogu.com.cn/problem/P5443",
+        "kind": "problem"
+      },
+      {
+        "topic": "Graph Cuts",
+        "url": "https://qoj.ac/problem/7181",
+        "kind": "problem"
+      },
+      {
+        "topic": "Multiply Then Plus",
+        "url": "https://qoj.ac/problem/8074",
+        "kind": "problem"
+      },
+      {
+        "topic": "P8330",
+        "url": "https://www.luogu.com.cn/problem/P8330",
+        "kind": "problem"
+      },
+      {
+        "topic": "UCup Shenzhen G",
+        "url": "https://contest.ucup.ac/contest/1540/problem/8334",
+        "kind": "problem"
+      },
+      {
+        "topic": "P7738",
+        "url": "https://www.luogu.com.cn/problem/P7738",
+        "kind": "problem"
+      },
+      {
+        "topic": "ABC259Ex",
+        "url": "https://atcoder.jp/contests/abc259/tasks/abc259_h",
+        "kind": "problem"
+      },
+      {
+        "topic": "AGC001E",
+        "url": "https://atcoder.jp/contests/agc001/tasks/agc001_e",
+        "kind": "problem"
+      },
+      {
+        "topic": "Gym104090I",
+        "url": "https://codeforces.com/gym/104090/problem/I",
+        "kind": "problem"
+      },
+      {
+        "topic": "CerealCodes III Advanced I",
+        "url": "https://codeforces.com/gym/105310/problem/I",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1207F",
+        "url": "https://codeforces.com/problemset/problem/1207/F",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF914F",
+        "url": "https://codeforces.com/problemset/problem/914/F",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF840E",
+        "url": "https://codeforces.com/problemset/problem/840/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "Gym105487J",
+        "url": "https://codeforces.com/gym/105487/problem/J",
+        "kind": "problem"
+      },
+      {
+        "topic": "P4168",
+        "url": "https://www.luogu.com.cn/problem/P4168",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF342E",
+        "url": "https://codeforces.com/problemset/problem/342/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "ABC219G",
+        "url": "https://atcoder.jp/contests/abc219/tasks/abc219_g",
+        "kind": "problem"
+      }
+    ],
+    "randomization": [
+      {
+        "topic": "CF1175F",
+        "url": "https://codeforces.com/problemset/problem/1175/F",
+        "kind": "problem"
+      },
+      {
+        "topic": "2023合肥D",
+        "url": "https://codeforces.com/gym/104857/problem/D",
+        "kind": "problem"
+      },
+      {
+        "topic": "P3792",
+        "url": "https://www.luogu.com.cn/problem/P3792",
+        "kind": "problem"
+      },
+      {
+        "topic": "P8819",
+        "url": "https://www.luogu.com.cn/problem/P8819",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1418G",
+        "url": "https://codeforces.com/problemset/problem/1418/G",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1746F",
+        "url": "https://codeforces.com/problemset/problem/1746/F",
+        "kind": "problem"
+      },
+      {
+        "topic": "随机顺序选K个物品 / 带宽DP",
+        "url": null,
+        "kind": "model"
+      },
+      {
+        "topic": "CF436E",
+        "url": "https://codeforces.com/problemset/problem/436/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF739E",
+        "url": "https://codeforces.com/problemset/problem/739/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1799F",
+        "url": "https://codeforces.com/problemset/problem/1799/F",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1891E",
+        "url": "https://codeforces.com/problemset/problem/1891/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "P3765",
+        "url": "https://www.luogu.com.cn/problem/P3765",
+        "kind": "problem"
+      },
+      {
+        "topic": "Graph Cuts",
+        "url": "https://qoj.ac/problem/7181",
+        "kind": "problem"
+      },
+      {
+        "topic": "UOJ207",
+        "url": "https://uoj.ac/problem/207",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1305F",
+        "url": "https://codeforces.com/problemset/problem/1305/F",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1310D",
+        "url": "https://codeforces.com/problemset/problem/1310/D",
+        "kind": "problem"
+      },
+      {
+        "topic": "P8817",
+        "url": "https://www.luogu.com.cn/problem/P8817",
+        "kind": "problem"
+      },
+      {
+        "topic": "反向括号（原课件清北营模型）",
+        "url": null,
+        "kind": "model"
+      },
+      {
+        "topic": "Gym104207H",
+        "url": "https://codeforces.com/gym/104207/attachments/download/19250/statement.pdf#page=11",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1198F",
+        "url": "https://codeforces.com/problemset/problem/1198/F",
+        "kind": "problem"
+      },
+      {
+        "topic": "动态传递闭包",
+        "url": null,
+        "kind": "model"
+      },
+      {
+        "topic": "Gym103469E",
+        "url": "https://codeforces.com/gym/103469/problem/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "CCPC Final2022 L",
+        "url": "https://qoj.ac/problem/6512",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1909E",
+        "url": "https://codeforces.com/problemset/problem/1909/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "Freivalds矩阵乘法验证",
+        "url": null,
+        "kind": "model"
+      },
+      {
+        "topic": "P1923",
+        "url": "https://www.luogu.com.cn/problem/P1923",
+        "kind": "problem"
+      },
+      {
+        "topic": "ABC367F",
+        "url": "https://atcoder.jp/contests/abc367/tasks/abc367_f",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF364D",
+        "url": "https://codeforces.com/problemset/problem/364/D",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1523D",
+        "url": "https://codeforces.com/problemset/problem/1523/D",
+        "kind": "problem"
+      }
+    ]
+  },
+  "editorials": {
+    "problem-setting-2025-online-2": [
+      {
+        "topic": "C",
+        "url": "https://codeforces.com/gym/106072/problem/C",
+        "kind": "problem"
+      },
+      {
+        "topic": "D",
+        "url": "https://codeforces.com/gym/106072/problem/D",
+        "kind": "problem"
+      },
+      {
+        "topic": "J",
+        "url": "https://codeforces.com/gym/106072/problem/J",
+        "kind": "problem"
+      },
+      {
+        "topic": "L",
+        "url": "https://codeforces.com/gym/106072/problem/L",
+        "kind": "problem"
+      }
+    ],
+    "problem-setting-2025-guangxi": [
+      {
+        "topic": "E",
+        "url": "https://ac.nowcoder.com/acm/contest/110811/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "F",
+        "url": "https://ac.nowcoder.com/acm/contest/110811/F",
+        "kind": "problem"
+      },
+      {
+        "topic": "L",
+        "url": "https://ac.nowcoder.com/acm/contest/110811/L",
+        "kind": "problem"
+      }
+    ],
+    "problem-setting-2025-sichuan": [
+      {
+        "topic": "A",
+        "url": "https://codeforces.com/gym/105949/problem/A",
+        "kind": "problem"
+      },
+      {
+        "topic": "C",
+        "url": "https://codeforces.com/gym/105949/problem/C",
+        "kind": "problem"
+      },
+      {
+        "topic": "I",
+        "url": "https://codeforces.com/gym/105949/problem/I",
+        "kind": "problem"
+      },
+      {
+        "topic": "L",
+        "url": "https://codeforces.com/gym/105949/problem/L",
+        "kind": "problem"
+      }
+    ],
+    "problem-setting-2024-ccpc-women": [
+      {
+        "topic": "D",
+        "url": "https://codeforces.com/gym/105487/problem/D",
+        "kind": "problem"
+      },
+      {
+        "topic": "E",
+        "url": "https://codeforces.com/gym/105487/problem/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "I",
+        "url": "https://codeforces.com/gym/105487/problem/I",
+        "kind": "problem"
+      },
+      {
+        "topic": "J",
+        "url": "https://codeforces.com/gym/105487/problem/J",
+        "kind": "problem"
+      }
+    ]
+  },
+  "note": "Models have no uniquely identified public statement; no URL is invented. Gym104207H uses page 11 of the official statement PDF."
+}
