@@ -9,6 +9,10 @@ node_modules/
 /content/drafts/
 
 # Generated from lecture/editorial Typst sources by npm run build
+/public/lectures/*.pdf
+/public/solutions/*.pdf
+
+# Legacy generated locations, cleaned by the presentation build
 /public/assets/lectures/*.pdf
 /public/assets/lectures/*.tmp.pdf
 

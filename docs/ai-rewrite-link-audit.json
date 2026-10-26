@@ -332,6 +332,51 @@
         "topic": "CF1523D",
         "url": "https://codeforces.com/problemset/problem/1523/D",
         "kind": "problem"
+      },
+      {
+        "topic": "CF843B",
+        "url": "https://codeforces.com/problemset/problem/843/B",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1114E",
+        "url": "https://codeforces.com/problemset/problem/1114/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1364E",
+        "url": "https://codeforces.com/problemset/problem/1364/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF2074E",
+        "url": "https://codeforces.com/problemset/problem/2074/E",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1986F",
+        "url": "https://codeforces.com/problemset/problem/1986/F",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1559D2",
+        "url": "https://codeforces.com/problemset/problem/1559/D2",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1438F",
+        "url": "https://codeforces.com/problemset/problem/1438/F",
+        "kind": "problem"
+      },
+      {
+        "topic": "CF1705F",
+        "url": "https://codeforces.com/problemset/problem/1705/F",
+        "kind": "problem"
+      },
+      {
+        "topic": "随机游走 2-SAT",
+        "url": "https://www.cl.cam.ac.uk/teaching/1920/Probablty/materials/Lecture7.pdf#page=11",
+        "kind": "model"
       }
     ]
   },

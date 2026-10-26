@@ -15,8 +15,9 @@
 在网站根目录运行 `npm run build:editorials` 编译四份讲评；`npm run build` 同时编译
 两份专题课件与四份比赛讲评，再构建网站。需要 Typst 0.15 与 PingFang SC 或 Noto Sans CJK SC。
 
-输出为 `public/assets/editorials/{slug}.pdf`，构建时复制到 `dist/assets/editorials/`。
-About 中每场比赛只有一个直接 PDF 入口，不生成独立 HTML 题解页。生成的 PDF 不提交 Git。
+输出为 `public/solutions/{slug}.pdf`，构建时复制到 `dist/solutions/`。
+About 保留每场比赛的原题链接，另设题解 PDF 入口；不生成独立 HTML 题解页。
+生成的 PDF 不提交 Git。
 `[AI rewrite]` 仅标在入口上，课件封面与正文不重复说明，也不显示修订日期。
 
 来源、与本地题稿的差异以及验证记录见 `../docs/ai-rewrite-sources.md`。

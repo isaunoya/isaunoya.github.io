@@ -1,0 +1,161 @@
+{
+  "checkedOn": "2026-10-27",
+  "tagsSource": "https://codeforces.com/api/problemset.problems?tags=interactive",
+  "historySource": "https://codeforces.com/api/user.status?handle=Retired_Isaunoya&from=1&count=10000",
+  "historyCount": 5025,
+  "note": "Accepted records establish completion, not a specific algorithm. In the first pass, Luogu mirrors supplied statement rules after CF HTTP 403 responses. In the second pass, official CF1438F and CF1705F statements and editorials were read in the browser. CF1364E is now based on source supplied directly by the author; CF1438F/CF1705F submission source was not read.",
+  "problems": [
+    {
+      "contestId": 2074,
+      "index": "E",
+      "name": "Empty Triangle",
+      "rating": 1600,
+      "tags": [
+        "geometry",
+        "interactive",
+        "probabilities"
+      ],
+      "statement": "https://codeforces.com/problemset/problem/2074/E",
+      "statementMirror": "https://www.luogu.com.cn/problem/CF2074E",
+      "acceptedSubmissions": [],
+      "includedInDeck": true,
+      "statementRead": true
+    },
+    {
+      "contestId": 1918,
+      "index": "E",
+      "name": "ace5 and Task Order",
+      "rating": 2200,
+      "tags": [
+        "constructive algorithms",
+        "divide and conquer",
+        "implementation",
+        "interactive",
+        "probabilities",
+        "sortings"
+      ],
+      "statement": "https://codeforces.com/problemset/problem/1918/E",
+      "statementMirror": "https://www.luogu.com.cn/problem/CF1918E",
+      "acceptedSubmissions": [
+        244200360
+      ],
+      "includedInDeck": false,
+      "statementRead": true
+    },
+    {
+      "contestId": 1840,
+      "index": "G2",
+      "name": "In Search of Truth (Hard Version)",
+      "rating": 2500,
+      "tags": [
+        "constructive algorithms",
+        "interactive",
+        "math",
+        "meet-in-the-middle",
+        "probabilities"
+      ],
+      "statement": "https://codeforces.com/problemset/problem/1840/G2",
+      "statementMirror": "https://www.luogu.com.cn/problem/CF1840G2",
+      "acceptedSubmissions": [],
+      "includedInDeck": false,
+      "statementRead": false
+    },
+    {
+      "contestId": 1705,
+      "index": "F",
+      "name": "Mark and the Online Exam",
+      "rating": 2900,
+      "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "interactive",
+        "probabilities"
+      ],
+      "statement": "https://codeforces.com/problemset/problem/1705/F",
+      "statementMirror": "https://www.luogu.com.cn/problem/CF1705F",
+      "acceptedSubmissions": [
+        349519038
+      ],
+      "includedInDeck": true,
+      "statementRead": true,
+      "officialStatementRead": true,
+      "editorialRead": true,
+      "editorial": "https://codeforces.com/blog/entry/104881"
+    },
+    {
+      "contestId": 1438,
+      "index": "F",
+      "name": "Olha and Igor",
+      "rating": 3000,
+      "tags": [
+        "interactive",
+        "probabilities",
+        "trees"
+      ],
+      "statement": "https://codeforces.com/problemset/problem/1438/F",
+      "statementMirror": "https://www.luogu.com.cn/problem/CF1438F",
+      "acceptedSubmissions": [
+        98353331
+      ],
+      "includedInDeck": true,
+      "statementRead": true,
+      "officialStatementRead": true,
+      "editorialRead": true,
+      "editorial": "https://codeforces.com/blog/entry/84589"
+    },
+    {
+      "contestId": 1364,
+      "index": "E",
+      "name": "X-OR",
+      "rating": 2700,
+      "tags": [
+        "bitmasks",
+        "constructive algorithms",
+        "divide and conquer",
+        "interactive",
+        "probabilities"
+      ],
+      "statement": "https://codeforces.com/problemset/problem/1364/E",
+      "statementMirror": "https://www.luogu.com.cn/problem/CF1364E",
+      "acceptedSubmissions": [
+        83685498
+      ],
+      "includedInDeck": true,
+      "statementRead": true,
+      "algorithmSource": "Author-provided C++ in this task; low-popcount pivot and complete proper-submask descent."
+    },
+    {
+      "contestId": 1114,
+      "index": "E",
+      "name": "Arithmetic Progression",
+      "rating": 2200,
+      "tags": [
+        "binary search",
+        "interactive",
+        "number theory",
+        "probabilities"
+      ],
+      "statement": "https://codeforces.com/problemset/problem/1114/E",
+      "statementMirror": "https://www.luogu.com.cn/problem/CF1114E",
+      "acceptedSubmissions": [],
+      "includedInDeck": true,
+      "statementRead": true
+    },
+    {
+      "contestId": 843,
+      "index": "B",
+      "name": "Interactive LowerBound",
+      "rating": 2000,
+      "tags": [
+        "brute force",
+        "interactive",
+        "probabilities"
+      ],
+      "statement": "https://codeforces.com/problemset/problem/843/B",
+      "statementMirror": "https://www.luogu.com.cn/problem/CF843B",
+      "acceptedSubmissions": [],
+      "includedInDeck": true,
+      "statementRead": true
+    }
+  ]
+}

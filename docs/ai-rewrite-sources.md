@@ -42,8 +42,8 @@ Originals: `ppt/isaunoya/根号数据结构&根号分治/slide.typ` and
 `ppt/isaunoya/随机化选讲/slide.tex`, together with their PDFs.
 The canonical rewritten sources are `lectures/{sqrt-decomposition,randomization}/slides.typ`.
 `npm run build` runs `scripts/build-presentations.mjs` before the site build, compiling
-these sources into `public/assets/lectures/{slug}.pdf`; the site copies them to
-`dist/assets/lectures/`. Generated PDFs are ignored by Git. CI installs Typst and
+these sources into `public/lectures/{slug}.pdf`; the site copies them to
+`dist/lectures/`. Generated PDFs are ignored by Git. CI installs Typst and
 Noto CJK fonts before invoking the same command. No author-local paths are needed.
 About links directly to these two PDFs, one entry per lecture. The four contest
 editorials have canonical Touying sources in `editorials/{slug}/slides.typ`; all six PDFs have no intermediary HTML pages,
@@ -215,8 +215,8 @@ original-problem guarantee.
 All 15 officially used problems now have stepped Touying solutions, in four
 editorial decks. Each problem opens with its statement and clickable official
 link, then reveals a solution after a pause. The former eight `content/about/`
-article/index files were replaced by these canonical sources. About links
-directly to `/assets/editorials/{slug}.pdf`; no separate editorial HTML routes
+article/index files were replaced by these canonical sources. About keeps the original contest links and adds separate solution links
+to `/solutions/{slug}.pdf`; no separate editorial HTML routes
 are generated. `npm run build` compiles all six PDFs from their Typst sources.
 
 Guangxi F follows the author’s later binary-search/hash-set solution, as
@@ -283,3 +283,180 @@ This reorganization preserves all 84 statement/model first screens and the
 original external URLs. Existing algorithm code and verification assets are
 unchanged. The topic authors cross-reviewed each other's frozen versions, and
 the primary reviewer checked the substantive changes and rendered pages.
+
+## Randomized interactive problems and traditional techniques (2026-10-27)
+
+The final deck has 186 logical slides plus 37 reveal pages (223 PDF pages).
+The main route still ends at physical page 35. Expanded material is elective:
+seven interactive examples, graph cut fingerprints, random preprocessing with
+an exact fallback, and random-walk 2-SAT. Statements precede their first reveal;
+problem titles, official sources and internal indices remain clickable.
+
+`random-interactive-sources.json` records API tags, ratings and accepted records.
+An AC record establishes completion, not a particular algorithm. The first pass
+read Luogu statement mirrors after CF HTTP 403 responses. This pass read the
+CF1438F/CF1705F official statements and editorials in the browser. Their submission
+source was not accessible, so the reconstructed methods are not attributed to
+those submissions. CF1364E and CF1559D2 now use code supplied by the author.
+
+- CF843B retains the 1+999+999 query split and miss bound below 2.2e-9.
+- CF1114E retains at most 30 maximum comparisons and 30 sampled indices;
+  the common-prime error bound is below 3.5e-8.
+- CF1364E **replaces** the previous zero-bit-witness presentation. The author's
+  code samples an OR with at most six one-bits, reads an entire pivot row, and
+  descends through complete proper-submask families. Every pivot is recovered
+  exactly, including zero. Two main slides explicitly count R+(n-2)+S+(n-1-d),
+  where S is descent queries and d counts newly known values after the first pivot.
+  Each k-bit descent adds 2^k-2 queries but saves one final query. Thus S-d is at
+  most sum(k=2..6)(2^k-3)=109, giving Q<=R+2n+106. The appendix identifies
+  A_k=S-d and explains the terminal cases A_0=0 and A_1=-1.
+  Exact pair counts and rational A distributions, followed by outward-rounded
+  arithmetic, certify Pr(Q>4269)<4.70258e-7 for all n=3..2048. The deck states
+  the slightly looser 4.8e-7. This is an independent-uniform sampling model,
+  not a claim about the original modulo-based PRNG. A common query cap converts
+  overflow to bounded-budget failure. Cached variants only reduce the count.
+- CF2074E retains conditional expected contraction for an adaptive interactor;
+  the final shrink after query 75 can be output without another query.
+- CF1438F uses 420 uniform distinct-vertex triples, selects the two most frequent
+  medians, then locates the root conditional on those candidates being its children.
+  Pairwise count differences and a union bound give error below 4.902e-5 for
+  h=4..18, checked with exact rational upper bounds. Height 3 enumerates all 35
+  triples and uses at most 40 queries deterministically. Candidate scanning is
+  not unconditional exact verification. Sources:
+  https://codeforces.com/problemset/problem/1438/F and
+  https://codeforces.com/blog/entry/84589 .
+- CF1705F uses two score baselines and balanced groups. Each step recovers two
+  bits with one query or three with two; the final at-most-two bits follow from
+  baseline totals. The hard bound, including the final answer, is 669. Independent
+  random baseline bits reduce expectation to at most 3n/5+3. The expectation proof
+  exposes only local information used by selection; it does not condition on full
+  baseline totals and then assume independence. Sources:
+  https://codeforces.com/problemset/problem/1705/F and
+  https://codeforces.com/blog/entry/104881 .
+
+### Author comments and ordinary problems
+
+The comments page https://codeforces.com/comments/with/Retired_Isaunoya was read.
+
+CF1986F follows the author's endpoint-XOR idea in
+https://codeforces.com/blog/entry/130762#comment-1162789 and local source
+`cp-codes/codeforces/codeforces_round_954_(div_3)/F.cpp`.
+A DSU spanning tree fixes all cuts before assigning independent 64-bit non-tree
+edge tags. Endpoint XOR/subtree aggregation cancels internal edges. True bridges
+are never missed; a nonempty cut cancels with probability 2^-64. Apply the union
+bound to all fixed tree cuts. Official statement:
+https://codeforces.com/problemset/problem/1986/F .
+The linked submission is 267125590; source was read locally, not through a
+submission page. The earlier LCA/difference submission was 267081057.
+
+CF1559D2 discussion:
+https://codeforces.com/blog/entry/93788#comment-829072 . The author confirms the
+submission passed all official tests and was subsequently hacked. We do not
+replace this with a claim of original test failure or identify the historical
+hack. The source provided in this task is materially different from pure random
+pair search: two million draws are followed by exact bitset completion, but only
+when both component counts are at most 10000. Once entered, that completion phase
+maintains correct component-complement masks and finds a maximum solution.
+
+A newly constructed valid n=100000 input has component counts 10001 and 2:
+forest 0 is a 90000-vertex tree containing x plus 10000 isolates; forest 1 isolates
+x and connects the rest. Exactly 10000 unordered edges are legal. Uniform
+independent endpoint draws (allowing equal endpoints) hit with probability 2e-6;
+missing all two million draws has probability about 1.83156%, skips the bitset
+phase and returns zero instead of one. This is a construction-specific failure
+probability, not an input-averaged rate or a global upper bound. The source's
+modulo bias is separate from the ideal uniform model.
+
+A stronger new family partitions vertices into r, A (54999), B (45000).
+Forest 0 connects r to B; forest 1 connects r to A; all other vertices are isolated.
+With j B-isolates left there are j+9999 A-isolates and component counts
+(10000+j,j+1), so the bitset guard fails until the optimum is already reached.
+The uniform model has independent geometric stage waits of parameter
+2*j*(j+9999)/100000^2. Exact rational moment bounds give mean at least
+4793884.771 and variance at most 410846421207. Cantelli certifies failure after
+two million attempts above 94.99% for this input. This is neither the historical
+hack nor an input-averaged rate. It demonstrates why the 1.83% example is not a
+uniform upper bound. Two appendix slides give the full stage/moment derivation.
+
+Let K0,K1 be remaining component counts, k=min(K0-1,K1-1), W=ceil(100000/64),
+and C the number of snapshot candidates tested. Each nonempty outer loop merges
+at least once, so C<=n*k. Total work is
+O((m0+m1+T+n+C)D(n)+(n+K0+K1+k)W), with conservative D(n)=O(log n) for the
+source's path compression without rank. Adding size/rank gives O(alpha(n)).
+The two static bitset arrays reserve 250080000 bytes in a usual 64-bit-word
+layout; resident memory depends on touched rows.
+
+The exact fallback fixes a common root, connects all vertices legal from it,
+then pairs representatives outside its component in opposite forests. It reaches
+min(c0-1,c1-1) additions. With union by size it takes O((n+m0+m1)alpha(n)) time
+and O(n) space. Any preceding finite sequence of legal random merges preserves
+that optimum, so keeping T attempts costs O((T+n+m0+m1)alpha(n)) and remains exact.
+
+Random-walk 2-SAT follows Cambridge lecture notes:
+https://www.cl.cam.ac.uk/teaching/1920/Probablty/materials/Lecture7.pdf .
+The potential Phi(d)=d(2n-d) has conditional drift at most -1 before a solution.
+Expected flips are at most n^2; a run of 2n^2 flips misses a satisfiable instance
+with probability at most 1/2. Independent runs amplify this. The deck distinguishes
+flips from execution time: scanning m clauses costs O(r*m*n^2) across r runs.
+It also states the linear-time SCC alternative and why the same proof does not
+extend unchanged to 3-SAT or general annealing.
+
+### Reproducible checks
+
+- `python3 lectures/randomization/verify-interactive.py`: original-schedule X-OR
+  reconstruction and cutoffs, scaled LowerBound cases, AP sample sets and bounds.
+- `python3 lectures/randomization/verify-xor-tail.py`: exact finite distributions
+  and outward-rounded certificate for every allowed n; outputs to a temp directory.
+- `python3 lectures/randomization/verify-olha.py`: rational Markov/union bounds
+  over the complete allowed height range.
+- `python3 lectures/randomization/verify-mocha.py`: compiles the exact fallback
+  in a temporary directory, tests 3262 executable cases and 44168 small partition
+  pairs against original bitset invariants and the exact optimum.
+- `python3 lectures/randomization/verify-mocha-tail.py`: rational one-sided
+  moment certificate for the stronger family; JSON on stdout.
+- `python3 lectures/randomization/verify-mark.py`: exhaustive small transcripts,
+  2000 size-1000 simulations and a construction attaining the 669-query bound.
+
+Empirical checks validate implementation and invariants; probability claims use
+the stated proofs and finite arithmetic certificates, not observed success rates.
+
+## Teaching-clarity review (2026-10-27)
+
+Both topic decks were read through again for unexplained constants, complexity
+terms, assumptions and proof transitions. Thirteen topic-level issues were
+addressed, while retaining statement-first reveals and the existing theme.
+
+- CF1364E now counts all four query phases and explains the net descent cost
+  2^k-3. Summing k=2..6 gives 109, then the baseline -3 gives 106. The appendix
+  connects the same quantities to its distribution recurrence and derives the
+  geometric-tail exponent 4272-2n-a from Q>4269.
+- Quickselect explains the geometric waiting sum before accumulating scan costs.
+- Linear fingerprints introduce invertibility before division in a prime field.
+- Kazaee includes the random-bit table for all D distinct initial/update values:
+  parallel space is O(t(n+D)); sequential replay remains O(n+q).
+- Graph Cuts specifies 1+ceil(log2(m)) layers, derives fixed-cut isolation
+  probability at least 1/(2e), and accounts for each group/layer in operation cost.
+  The existing adaptive-process limitation remains explicit.
+- CF436E derives its exponent constant by dividing star counts and deviations
+  by two. A separate slide then accounts for state and reconstruction costs.
+- Equidistance derives the common centroid radius from the sum of squared
+  pairwise distances before choosing the orthogonal height.
+- The multivariate polynomial evaluation bound is proved by induction on the
+  last variable and its highest nonzero coefficient polynomial.
+- CF1198F explains the nine-prime limit using the minimum ten-prime product.
+- Multiply Then Plus defines V as the number of distinct query coordinates,
+  includes sorting and ceil(q/T) rebuilding batches, and separates full blocks,
+  boundaries and currently changed lines.
+- COUNTARI maintains left/right frequencies incrementally across blocks,
+  costing O(n) total outside convolution.
+- Quantum Communication's 16n/2^16 expectation is qualified by a fixed query
+  independent of the random dictionary; correctness stays deterministic.
+- Hangzhou I substitutes its tail width into all three query costs, derives
+  the cube-root balance, and explicitly reserves one initial query. With
+  s=B=3000 there are 3999 giant queries, covering width 11997000 and giving
+  the stated bound below 1.54e-8 under the already stated sampling model.
+
+The sqrt deck now has 145 logical slides and 39 reveal pages (184 PDF pages).
+Its cross-deck link now uses /lectures/randomization.pdf. The randomization
+main route still ends on physical page 35. All modified layouts were checked
+with both local PingFang and CI Noto font configurations.

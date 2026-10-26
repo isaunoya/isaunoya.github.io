@@ -14,7 +14,8 @@ if (selected && !Object.hasOwn(collections, selected)) {
 }
 for (const [collection, slugs] of Object.entries(collections)) {
   if (selected && collection !== selected) continue;
-  const output = path.join(root, 'public/assets', collection);
+  const route = collection === 'editorials' ? 'solutions' : 'lectures';
+  const output = path.join(root, 'public', route);
   mkdirSync(output, { recursive: true });
   for (const slug of slugs) {
     const source = path.join(root, collection, slug, 'slides.typ');
@@ -28,6 +29,7 @@ for (const [collection, slugs] of Object.entries(collections)) {
       throw result.error ?? new Error(`Presentation compilation failed: ${collection}/${slug}`);
     }
     renameSync(temporary, path.join(output, `${slug}.pdf`));
-    console.log(`Built /assets/${collection}/${slug}.pdf`);
+    rmSync(path.join(root, 'public/assets', collection, `${slug}.pdf`), { force: true });
+    console.log(`Built /${route}/${slug}.pdf`);
   }
 }

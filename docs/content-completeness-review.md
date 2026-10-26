@@ -90,7 +90,7 @@ Online II J 在边中心和点中心下的端点分组。
 ## 网站与维护
 
 唯一正文源为 `lectures/*/slides.typ` 与 `editorials/*/slides.typ`。
-`npm run build` 编译全部六份 PDF，再构建网站。About 仅提供直接 PDF 入口，
+`npm run build` 编译全部六份 PDF，再构建网站。About 的比赛名称链接原比赛页，题解另设直接 PDF 入口，
 入口标注 `[AI rewrite]`；无独立题解 HTML 页，不在 PDF 中重复标注 AI 或修订日期。
 
 L 的讲解进一步压缩为分块映射与复杂度、Trie 子树共享与边界拼接，以及

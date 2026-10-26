@@ -12,8 +12,8 @@ npm run build:lectures  # 只编译两份课件
 npm run build          # 编译课件、比赛讲评并构建整个网站
 ```
 
-生成文件为 `public/assets/lectures/sqrt-decomposition.pdf` 和
-`public/assets/lectures/randomization.pdf`，构建网站时复制到同名静态路径。
+生成文件为 `public/lectures/sqrt-decomposition.pdf` 和
+`public/lectures/randomization.pdf`，构建网站时复制到同名静态路径。
 PDF 不提交到 Git；CI 使用相同命令重新生成。About 各提供一个直接 PDF 入口。
 
 题目先显示题面，通过 Touying `#pause` 在下一步揭示提示或解法。
